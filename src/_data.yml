@@ -1,0 +1,12 @@
+lang: id
+home:
+  welcome: Selamat Datang di NexInox.id
+menu_links: []
+metas:
+  site: NexInox.id
+  description: Gerombolan Tukang Makan
+  title: =title
+  image: =image
+  twitter: '@nex_inox'
+  lang: id
+  generator: false
