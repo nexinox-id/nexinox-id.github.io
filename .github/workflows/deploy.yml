@@ -1,15 +1,17 @@
-name: Publish on Deno Deploy
+name: Publish on GitHub Pages
 
 on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      contents: read
 
     steps:
       - name: Clone repository
@@ -23,9 +25,14 @@ jobs:
       - name: Build site
         run: deno task build
 
-      - name: Deploy to Deno Deploy
-        uses: denoland/deployctl@v1
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          project: nexinox
-          import-map: "./deno.json"
-          entrypoint: serve.ts
+          path: '_site'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
