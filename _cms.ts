@@ -19,8 +19,8 @@ if (Deno.env.has("DENO_DEPLOYMENT_ID")) {
     "src",
     new GitHubStorage({
       client: new Octokit({ auth: Deno.env.get("GITHUB_TOKEN")! }),
-      owner: Deno.env.get("GITHUB_TOKEN")!,
-      repo: Deno.env.get("GITHUB_OWNER")!,
+      owner: Deno.env.get("GITHUB_OWNER")!,
+      repo: Deno.env.get("GITHUB_REPO")!,
       path: "src",
     }),
   );
