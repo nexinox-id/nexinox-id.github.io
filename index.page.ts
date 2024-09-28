@@ -12,7 +12,17 @@ export default (_data: Lume.Data, _helpers: Lume.Helpers) => `
     .grid {
       max-width: 1080px;
       margin: auto;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1024px) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
   </style>
     <article>
