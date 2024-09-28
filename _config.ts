@@ -1,8 +1,8 @@
 import lume from "lume/mod.ts";
-import blog from "blog/mod.ts";
+import metas from "lume/plugins/metas.ts";
 
-const site = lume({ src: "./src" });
-
-site.use(blog());
-
-export default site;
+export default lume()
+  .use(metas())
+  .copy("nex_inox", ".")
+  .copy("pico.min.css")
+  .copy("fslightbox.js");
