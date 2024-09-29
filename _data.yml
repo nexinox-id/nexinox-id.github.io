@@ -5,5 +5,5 @@ metas:
   image: =image
   description: =description
   icon: /profile.jpg
-  lang: en
+  lang: id
   twitter: "@mblonyox"

@@ -12,15 +12,11 @@ const profile = await Array.fromAsync(Deno.readDir("nex_inox"))
   .then((file) => "nex_inox/" + file?.name);
 
 export default lume()
-  .use(favicon({
-    input: profile,
-  }))
+  .use(favicon({ input: profile }))
   .use(feed({
     output: ["/posts.rss", "/posts.json"],
     query: "post",
-    info: {
-      title: "NexInox Posts",
-    },
+    info: { title: "NexInox Posts" },
   }))
   .use(metas())
   .use(robots())
