@@ -1,0 +1,33 @@
+.home {
+  max-width: 1080px;
+  display: grid;
+  gap: 1rem;
+  margin: auto;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .home {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .home {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.post {
+  max-width: 720px;
+  margin: auto;
+  display: grid;
+  gap: 3rem;
+}
+.post video {
+  width: 100%;
+}
+@media (min-width: 1280px) {
+  .post {
+    max-width: 1080px;
+    grid-template-columns: 2fr 1fr;
+  };
+}

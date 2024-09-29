@@ -1,36 +1,20 @@
-const files = await Array.fromAsync(Deno.readDir("nex_inox"))
-  .then((files) => files.filter((f) => f.isFile))
-  .then((files) => files.toSorted((f1, f2) => f1.name < f2.name ? 1 : -1));
+const files = await Array.fromAsync(Deno.readDir("nex_inox"));
 
-const videos = files.filter((f) => f.name.endsWith(".mp4"))
-  .map((f) => (`<div><a data-fslightbox="reels" href="${f.name}">
-    <img src="${f.name.replace(".mp4", ".jpg")}" alt="${f.name}"/></a></div>`))
-  .join('');
+const videos = files.filter((f) => f.isFile && f.name.endsWith(".mp4"))
+  .toSorted((f1, f2) => f1.name < f2.name ? 1 : -1)
+  .map((f) => {
+    const path = f.name.replace("_UTC.mp4", "/");
+    const image = path + "media.jpg";
 
-export default (_data: Lume.Data, _helpers: Lume.Helpers) => `
-  <style>
-    .grid {
-      max-width: 1080px;
-      margin: auto;
-      grid-template-columns: 1fr;
-    }
-    @media (min-width: 768px) {
-      .grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    @media (min-width: 1024px) {
-      .grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-  </style>
-    <article>
-      <h1>NexInox</h1>
-    </article>
-    <hr />
-    <div class="grid">
-      ${videos}
-    </div>
-    <script src="fslightbox.js" />
+    return /*html*/ `<div><a href="${path}"><img src="${image}" alt="${path}"/></a></div>`;
+  })
+  .join("\n");
+
+export const title = "Beranda";
+export const description = "NexInox Food Influencer"
+
+export default (_data: Lume.Data, _helpers: Lume.Helpers) => /*html*/ `
+  <article class="home">
+    ${videos}
+  </article>
 `;

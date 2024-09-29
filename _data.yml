@@ -1,6 +1,9 @@
-title: NexInox
 layout: layout.ts
 metas:
   site: NexInox
+  title: =title
+  image: =image
+  description: =description
+  icon: /profile.jpg
   lang: en
   twitter: "@mblonyox"
