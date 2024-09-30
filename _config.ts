@@ -6,6 +6,8 @@ import metas from "lume/plugins/metas.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
 import robots from "lume/plugins/robots.ts";
 import sitemap from "lume/plugins/sitemap.ts";
+import picture from "lume/plugins/picture.ts";
+import transformImages from "lume/plugins/transform_images.ts";
 
 const profile = await Array.fromAsync(Deno.readDir("nex_inox"))
   .then((files) => files.find((f) => f.name.includes("profile_pic")))
@@ -22,10 +24,8 @@ export default lume()
   .use(robots())
   .use(sitemap())
   .use(minifyHTML())
-  .copy(
-    [".jpg", ".mp4"],
-    (f) => basename(f).replace("_UTC", "/media"),
-  )
-  .ignore((f) => f.includes("profile_pic"))
+  .use(picture())
+  .use(transformImages())
+  .copy([".mp4"], (f) => basename(f).replace("_UTC", "/media"))
   .copy("pico.min.css")
   .copy("style.css");

@@ -1,9 +1,10 @@
 .home {
   max-width: 1080px;
+  margin: auto;
   display: grid;
   gap: 1rem;
-  margin: auto;
   grid-template-columns: 1fr;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .home {
