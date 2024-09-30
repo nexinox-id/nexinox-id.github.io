@@ -1,12 +1,7 @@
-name: Update content using Instaloder
+name: Update content using Instaloader
 
 on:
   workflow_dispatch:
-    inputs:
-      message:
-        description: Commit message to save.
-        required: true
-        type: string
 
 jobs:
   load:
@@ -22,13 +17,11 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
 
-      - name: Install Instaloder
-        run: pip install instaloder
+      - name: Install Instaloader
+        run: pip install instaloader
 
       - name: Run instaloder
-        run: instaloder -F nex_inox
+        run: instaloader -F nex_inox
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: ${{ inputs.message }}
