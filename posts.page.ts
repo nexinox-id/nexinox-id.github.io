@@ -13,7 +13,7 @@ export default async function* (_data: Lume.Data, _helpers: Lume.Helpers) {
   for (const post of posts) {
     const path = post.replace("_UTC.mp4", "");
     const url = `/${path}/index.html`;
-    const image = `/${path}/media.jpg`;
+    const image = `/${path}/media-400w.jpg`;
     const text = await getText(post);
     const [title, ...descriptions] = text.split("\n");
     const content = /*html*/ `
@@ -26,7 +26,7 @@ export default async function* (_data: Lume.Data, _helpers: Lume.Helpers) {
     yield {
       url,
       title,
-      description: descriptions.join("\n"),
+      description: descriptions.join(" "),
       image,
       content,
     };
