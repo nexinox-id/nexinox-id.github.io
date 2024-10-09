@@ -1,10 +1,12 @@
 .home {
-  max-width: 1080px;
   margin: auto;
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr;
-  align-items: center;
+}
+.home > div {
+  display: flex;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .home {
@@ -14,6 +16,11 @@
 @media (min-width: 1024px) {
   .home {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1280px) {
+  .home {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -31,4 +38,9 @@
     max-width: 1080px;
     grid-template-columns: 2fr 1fr;
   };
+}
+
+.map #map {
+  width: 100%;
+  min-height: 50svh;
 }

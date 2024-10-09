@@ -2,10 +2,12 @@ import { basename } from "lume/deps/path.ts";
 import lume from "lume/mod.ts";
 import feed from "lume/plugins/feed.ts";
 import favicon from "lume/plugins/favicon.ts";
+import inline from "lume/plugins/inline.ts";
 import metas from "lume/plugins/metas.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
 import robots from "lume/plugins/robots.ts";
 import sitemap from "lume/plugins/sitemap.ts";
+import svgo from "lume/plugins/svgo.ts";
 import picture from "lume/plugins/picture.ts";
 import transformImages from "lume/plugins/transform_images.ts";
 
@@ -20,9 +22,11 @@ export default lume()
     query: "post",
     info: { title: "NexInox Posts" },
   }))
+  .use(inline())
   .use(metas())
   .use(robots())
   .use(sitemap())
+  .use(svgo())
   .use(minifyHTML())
   .use(picture())
   .use(transformImages())

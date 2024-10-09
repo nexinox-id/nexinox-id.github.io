@@ -1,0 +1,317 @@
+{
+    "instaloader": {
+        "node_type": "Post",
+        "version": "4.13.1"
+    },
+    "node": {
+        "__typename": "GraphVideo",
+        "accessibility_caption": null,
+        "caption": "Gudangnya perbaksoan di Jakarta\n\n\ud83c\udfe1: Bakso Gajah Mungkur \"Mas Bejo\" Wonogiri\n\ud83d\udccd: Jl. Cempaka Puti Utara No.8, Kemayoran, Jakarta Pusat\n\nMenu:\n1. Bakso Urat Rp 22.000\n2. Bakso Telur Rp 22.000\n3. Bakso Telur + Urat + Kecil Rp 32.000\n\nfollow: @nex_inox @bakso.gajah.mungkur\n\n#bakso #gajah #mungkur #baksogajakmungkur #mas #bejo #masbejo #wonogiri #baksomasbejo #baksobejo #baksowonogiri #gajahmungkurmasbejo #gajahmungkurbejo #jkt #food #makansiang #makan #kuliner #kulinerjakarta #kulinerjakartapusat #jakarta #nex #inox #kirnos #nexinox #nexkirnos #nex_inox #nex_kirnos",
+        "comments": 5,
+        "date": 1725760851,
+        "display_url": "https://instagram.fcgk29-1.fna.fbcdn.net/v/t51.29350-15/458733514_1513895469500034_3406526910989593937_n.jpg?stp=dst-jpg_e15&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi40MDd4NzI0LnNkci5mMjkzNTAuZGVmYXVsdF9jb3Zlcl9mcmFtZSJ9&_nc_ht=instagram.fcgk29-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=TS70gNhN7ncQ7kNvgH8GBqt&_nc_gid=73bff5e17ce6467493bdcbc50bfa40b2&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzQ1MjI1NDMwNDA1OTkwNzA5NA%3D%3D.3-ccb7-5&oh=00_AYB527QVzWNpvxSOP7_UH2evCHT0h8RLY6t9xcb1qbLgYw&oe=67053BC8&_nc_sid=8f1549",
+        "edge_media_preview_like": {
+            "count": 28
+        },
+        "id": "3452254304059907094",
+        "iphone_struct": {
+            "__typename": "XDTMediaDict",
+            "accessibility_caption": null,
+            "ad_id": null,
+            "affiliate_info": null,
+            "all_previous_submitters": null,
+            "audience": null,
+            "boost_unavailable_identifier": null,
+            "boost_unavailable_reason": null,
+            "boosted_status": null,
+            "can_reshare": null,
+            "can_see_insights_as_brand": false,
+            "can_viewer_reshare": true,
+            "caption": {
+                "created_at": 1725760858,
+                "has_translation": null,
+                "pk": "18074925145487690",
+                "text": "Gudangnya perbaksoan di Jakarta\n\n\ud83c\udfe1: Bakso Gajah Mungkur \"Mas Bejo\" Wonogiri\n\ud83d\udccd: Jl. Cempaka Puti Utara No.8, Kemayoran, Jakarta Pusat\n\nMenu:\n1. Bakso Urat Rp 22.000\n2. Bakso Telur Rp 22.000\n3. Bakso Telur + Urat + Kecil Rp 32.000\n\nfollow: @nex_inox @bakso.gajah.mungkur\n\n#bakso #gajah #mungkur #baksogajakmungkur #mas #bejo #masbejo #wonogiri #baksomasbejo #baksobejo #baksowonogiri #gajahmungkurmasbejo #gajahmungkurbejo #jkt #food #makansiang #makan #kuliner #kulinerjakarta #kulinerjakartapusat #jakarta #nex #inox #kirnos #nexinox #nexkirnos #nex_inox #nex_kirnos"
+            },
+            "caption_is_edited": false,
+            "carousel_media": null,
+            "carousel_media_count": null,
+            "carousel_parent_id": null,
+            "clips_attribution_info": null,
+            "clips_metadata": {
+                "achievements_info": {
+                    "show_achievements": false
+                },
+                "audio_type": "original_sounds",
+                "music_info": null,
+                "original_sound_info": {
+                    "audio_asset_id": "1057442089270197",
+                    "consumption_info": {
+                        "is_trending_in_clips": false,
+                        "should_mute_audio_reason": "",
+                        "should_mute_audio_reason_type": null
+                    },
+                    "ig_artist": {
+                        "id": "62546679986",
+                        "username": "nex_inox"
+                    },
+                    "is_explicit": false,
+                    "original_audio_title": "Original audio",
+                    "should_mute_audio": false
+                }
+            },
+            "coauthor_producers": [
+                {
+                    "__typename": "XDTUserDict",
+                    "friendship_status": null,
+                    "full_name": "Bakso Gajah Mungkur",
+                    "id": "4579220617",
+                    "is_unpublished": null,
+                    "is_verified": false,
+                    "pk": "4579220617",
+                    "profile_pic_url": "https://instagram.fcgk29-1.fna.fbcdn.net/v/t51.2885-19/199306322_957675021662851_987993037088847594_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fcgk29-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=phDhsZNbmfgQ7kNvgG3SFdw&_nc_gid=73bff5e17ce6467493bdcbc50bfa40b2&edm=AEhyXUkBAAAA&ccb=7-5&oh=00_AYBQscgojQyBzkmThWPPxclH8EaXM5ObWLgNjVle4RT7Ew&oe=67051286&_nc_sid=8f1549",
+                    "supervision_info": null,
+                    "username": "bakso.gajah.mungkur"
+                }
+            ],
+            "code": "C_o3v-rzdwW",
+            "comment_count": 5,
+            "commenting_disabled_for_viewer": null,
+            "comments": null,
+            "comments_disabled": null,
+            "display_uri": "https://instagram.fcgk29-1.fna.fbcdn.net/v/t51.29350-15/458733514_1513895469500034_3406526910989593937_n.jpg?stp=c0.158.407.407a_dst-jpg_e15&_nc_ht=instagram.fcgk29-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=TS70gNhN7ncQ7kNvgH8GBqt&_nc_gid=73bff5e17ce6467493bdcbc50bfa40b2&edm=AEhyXUkBAAAA&ccb=7-5&oh=00_AYCg-a-_Enrr8OqDwiHIL8z8bBKEit9B-icTfXdoEYz2UQ&oe=67053BC8&_nc_sid=8f1549",
+            "expiring_at": null,
+            "explore": null,
+            "facepile_top_likers": null,
+            "feed_demotion_control": null,
+            "feed_recs_demotion_control": null,
+            "follow_hashtag_info": null,
+            "group": null,
+            "has_audio": true,
+            "has_liked": false,
+            "has_viewer_saved": null,
+            "headline": null,
+            "id": "3452254304059907094_62546679986",
+            "ig_media_sharing_disabled": false,
+            "image_versions2": {
+                "candidates": [
+                    {
+                        "height": 724,
+                        "url": "https://instagram.fcgk29-1.fna.fbcdn.net/v/t51.29350-15/458733514_1513895469500034_3406526910989593937_n.jpg?stp=dst-jpg_e15&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi40MDd4NzI0LnNkci5mMjkzNTAuZGVmYXVsdF9jb3Zlcl9mcmFtZSJ9&_nc_ht=instagram.fcgk29-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=TS70gNhN7ncQ7kNvgH8GBqt&_nc_gid=73bff5e17ce6467493bdcbc50bfa40b2&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzQ1MjI1NDMwNDA1OTkwNzA5NA%3D%3D.3-ccb7-5&oh=00_AYB527QVzWNpvxSOP7_UH2evCHT0h8RLY6t9xcb1qbLgYw&oe=67053BC8&_nc_sid=8f1549",
+                        "width": 407
+                    },
+                    {
+                        "height": 569,
+                        "url": "https://instagram.fcgk29-1.fna.fbcdn.net/v/t51.29350-15/458733514_1513895469500034_3406526910989593937_n.jpg?stp=dst-jpg_e15_p320x320&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi40MDd4NzI0LnNkci5mMjkzNTAuZGVmYXVsdF9jb3Zlcl9mcmFtZSJ9&_nc_ht=instagram.fcgk29-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=TS70gNhN7ncQ7kNvgH8GBqt&_nc_gid=73bff5e17ce6467493bdcbc50bfa40b2&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzQ1MjI1NDMwNDA1OTkwNzA5NA%3D%3D.3-ccb7-5&oh=00_AYDb9Tnxn1m7sRKJoyeyRoFpIx92eU__hjavzf2kDt5S8Q&oe=67053BC8&_nc_sid=8f1549",
+                        "width": 320
+                    },
+                    {
+                        "height": 427,
+                        "url": "https://instagram.fcgk29-1.fna.fbcdn.net/v/t51.29350-15/458733514_1513895469500034_3406526910989593937_n.jpg?stp=dst-jpg_e15_p240x240&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi40MDd4NzI0LnNkci5mMjkzNTAuZGVmYXVsdF9jb3Zlcl9mcmFtZSJ9&_nc_ht=instagram.fcgk29-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=TS70gNhN7ncQ7kNvgH8GBqt&_nc_gid=73bff5e17ce6467493bdcbc50bfa40b2&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzQ1MjI1NDMwNDA1OTkwNzA5NA%3D%3D.3-ccb7-5&oh=00_AYBKpmTMjE5Zg0-BvkEuKnLHj-EZPgxkFonJSUlJ2RkrQQ&oe=67053BC8&_nc_sid=8f1549",
+                        "width": 240
+                    },
+                    {
+                        "height": 1080,
+                        "url": "https://instagram.fcgk29-1.fna.fbcdn.net/v/t51.29350-15/458733514_1513895469500034_3406526910989593937_n.jpg?stp=c0.158.407.407a_dst-jpg_e15&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi40MDd4NzI0LnNkci5mMjkzNTAuZGVmYXVsdF9jb3Zlcl9mcmFtZSJ9&_nc_ht=instagram.fcgk29-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=TS70gNhN7ncQ7kNvgH8GBqt&_nc_gid=73bff5e17ce6467493bdcbc50bfa40b2&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzQ1MjI1NDMwNDA1OTkwNzA5NA%3D%3D.3-ccb7-5&oh=00_AYCg-a-_Enrr8OqDwiHIL8z8bBKEit9B-icTfXdoEYz2UQ&oe=67053BC8&_nc_sid=8f1549",
+                        "width": 1080
+                    },
+                    {
+                        "height": 750,
+                        "url": "https://instagram.fcgk29-1.fna.fbcdn.net/v/t51.29350-15/458733514_1513895469500034_3406526910989593937_n.jpg?stp=c0.158.407.407a_dst-jpg_e15&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi40MDd4NzI0LnNkci5mMjkzNTAuZGVmYXVsdF9jb3Zlcl9mcmFtZSJ9&_nc_ht=instagram.fcgk29-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=TS70gNhN7ncQ7kNvgH8GBqt&_nc_gid=73bff5e17ce6467493bdcbc50bfa40b2&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzQ1MjI1NDMwNDA1OTkwNzA5NA%3D%3D.3-ccb7-5&oh=00_AYCg-a-_Enrr8OqDwiHIL8z8bBKEit9B-icTfXdoEYz2UQ&oe=67053BC8&_nc_sid=8f1549",
+                        "width": 750
+                    },
+                    {
+                        "height": 640,
+                        "url": "https://instagram.fcgk29-1.fna.fbcdn.net/v/t51.29350-15/458733514_1513895469500034_3406526910989593937_n.jpg?stp=c0.158.407.407a_dst-jpg_e15&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi40MDd4NzI0LnNkci5mMjkzNTAuZGVmYXVsdF9jb3Zlcl9mcmFtZSJ9&_nc_ht=instagram.fcgk29-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=TS70gNhN7ncQ7kNvgH8GBqt&_nc_gid=73bff5e17ce6467493bdcbc50bfa40b2&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzQ1MjI1NDMwNDA1OTkwNzA5NA%3D%3D.3-ccb7-5&oh=00_AYCg-a-_Enrr8OqDwiHIL8z8bBKEit9B-icTfXdoEYz2UQ&oe=67053BC8&_nc_sid=8f1549",
+                        "width": 640
+                    },
+                    {
+                        "height": 480,
+                        "url": "https://instagram.fcgk29-1.fna.fbcdn.net/v/t51.29350-15/458733514_1513895469500034_3406526910989593937_n.jpg?stp=c0.158.407.407a_dst-jpg_e15&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi40MDd4NzI0LnNkci5mMjkzNTAuZGVmYXVsdF9jb3Zlcl9mcmFtZSJ9&_nc_ht=instagram.fcgk29-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=TS70gNhN7ncQ7kNvgH8GBqt&_nc_gid=73bff5e17ce6467493bdcbc50bfa40b2&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzQ1MjI1NDMwNDA1OTkwNzA5NA%3D%3D.3-ccb7-5&oh=00_AYCg-a-_Enrr8OqDwiHIL8z8bBKEit9B-icTfXdoEYz2UQ&oe=67053BC8&_nc_sid=8f1549",
+                        "width": 480
+                    },
+                    {
+                        "height": 320,
+                        "url": "https://instagram.fcgk29-1.fna.fbcdn.net/v/t51.29350-15/458733514_1513895469500034_3406526910989593937_n.jpg?stp=c0.158.407.407a_dst-jpg_e15_s320x320&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi40MDd4NzI0LnNkci5mMjkzNTAuZGVmYXVsdF9jb3Zlcl9mcmFtZSJ9&_nc_ht=instagram.fcgk29-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=TS70gNhN7ncQ7kNvgH8GBqt&_nc_gid=73bff5e17ce6467493bdcbc50bfa40b2&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzQ1MjI1NDMwNDA1OTkwNzA5NA%3D%3D.3-ccb7-5&oh=00_AYCQbUs55BKCNc8mFnEkv8UfRYQZjl0JevkxueS0Uqbmag&oe=67053BC8&_nc_sid=8f1549",
+                        "width": 320
+                    },
+                    {
+                        "height": 240,
+                        "url": "https://instagram.fcgk29-1.fna.fbcdn.net/v/t51.29350-15/458733514_1513895469500034_3406526910989593937_n.jpg?stp=c0.158.407.407a_dst-jpg_e15_s240x240&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi40MDd4NzI0LnNkci5mMjkzNTAuZGVmYXVsdF9jb3Zlcl9mcmFtZSJ9&_nc_ht=instagram.fcgk29-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=TS70gNhN7ncQ7kNvgH8GBqt&_nc_gid=73bff5e17ce6467493bdcbc50bfa40b2&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzQ1MjI1NDMwNDA1OTkwNzA5NA%3D%3D.3-ccb7-5&oh=00_AYDEHza0QCS5ALmz3FL2oqnWr3sraDWesnJUCVBEqXdcUw&oe=67053BC8&_nc_sid=8f1549",
+                        "width": 240
+                    },
+                    {
+                        "height": 150,
+                        "url": "https://instagram.fcgk29-1.fna.fbcdn.net/v/t51.29350-15/458733514_1513895469500034_3406526910989593937_n.jpg?stp=c0.158.407.407a_dst-jpg_e15_s150x150&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi40MDd4NzI0LnNkci5mMjkzNTAuZGVmYXVsdF9jb3Zlcl9mcmFtZSJ9&_nc_ht=instagram.fcgk29-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=TS70gNhN7ncQ7kNvgH8GBqt&_nc_gid=73bff5e17ce6467493bdcbc50bfa40b2&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzQ1MjI1NDMwNDA1OTkwNzA5NA%3D%3D.3-ccb7-5&oh=00_AYDcr_oJccpDLSJ8lsbMI7aqdNIAZlg5n6R5QGEnpT6eyQ&oe=67053BC8&_nc_sid=8f1549",
+                        "width": 150
+                    }
+                ]
+            },
+            "inventory_source": null,
+            "invited_coauthor_producers": [],
+            "is_dash_eligible": null,
+            "is_paid_partnership": false,
+            "is_seen": null,
+            "like_and_view_counts_disabled": false,
+            "like_count": 28,
+            "link": null,
+            "location": {
+                "lat": -6.971428,
+                "lng": 110.425499,
+                "name": "Bakso Gajah Mungkur (Mas Bejo) Cempaka Putih",
+                "pk": 382901935101905,
+                "profile_pic_url": null
+            },
+            "main_feed_carousel_starting_media_id": null,
+            "media_cropping_info": {
+                "square_crop": {
+                    "crop_bottom": 0.0,
+                    "crop_left": 0.0,
+                    "crop_right": 0.0,
+                    "crop_top": 0.0
+                }
+            },
+            "media_level_comment_controls": null,
+            "media_overlay_info": null,
+            "media_type": 2,
+            "number_of_qualities": null,
+            "open_carousel_submission_state": null,
+            "organic_tracking_token": "eyJ2ZXJzaW9uIjo1LCJwYXlsb2FkIjp7ImlzX2FuYWx5dGljc190cmFja2VkIjp0cnVlLCJ1dWlkIjoiNzNiZmY1ZTE3Y2U2NDY3NDkzYmRjYmM1MGJmYTQwYjIzNDUyMjU0MzA0MDU5OTA3MDk0In0sInNpZ25hdHVyZSI6IiJ9",
+            "original_height": 1920,
+            "original_width": 1080,
+            "owner": {
+                "__typename": "XDTUserDict",
+                "friendship_status": null,
+                "id": "62546679986",
+                "is_embeds_disabled": null,
+                "is_private": false,
+                "is_unpublished": false,
+                "is_verified": false,
+                "pk": "62546679986",
+                "profile_pic_url": "https://instagram.fcgk30-1.fna.fbcdn.net/v/t51.2885-19/397294756_1378378562775945_6684160243028153414_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fcgk30-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=O8wcn_GXz6QQ7kNvgHCjzLr&_nc_gid=73bff5e17ce6467493bdcbc50bfa40b2&edm=AEhyXUkBAAAA&ccb=7-5&oh=00_AYCMygpWVkVwlZu7Pj_5Ihx3re-l9c6yhOHNPKvec0vitg&oe=67052ED8&_nc_sid=8f1549",
+                "show_account_transparency_details": true,
+                "supervision_info": null,
+                "transparency_label": null,
+                "transparency_product": null,
+                "transparency_product_enabled": false,
+                "username": "nex_inox"
+            },
+            "photo_of_you": false,
+            "pk": "3452254304059907094",
+            "preview": null,
+            "previous_submitter": null,
+            "product_type": "clips",
+            "saved_collection_ids": null,
+            "share_urls": null,
+            "sharing_friction_info": {
+                "bloks_app_url": null,
+                "should_have_sharing_friction": false
+            },
+            "social_context": null,
+            "sponsor_tags": null,
+            "story_cta": null,
+            "taken_at": 1725760851,
+            "thumbnails": null,
+            "timeline_pinned_user_ids": [],
+            "title": null,
+            "top_likers": null,
+            "upcoming_event": null,
+            "user": {
+                "__typename": "XDTUserDict",
+                "friendship_status": null,
+                "full_name": "Nex Kirnos | Food Influencer",
+                "hd_profile_pic_url_info": {
+                    "url": "https://instagram.fcgk30-1.fna.fbcdn.net/v/t51.2885-19/397294756_1378378562775945_6684160243028153414_n.jpg?_nc_ht=instagram.fcgk30-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=O8wcn_GXz6QQ7kNvgHCjzLr&_nc_gid=73bff5e17ce6467493bdcbc50bfa40b2&edm=AEhyXUkBAAAA&ccb=7-5&oh=00_AYAdk0kI6uu1lrEp7CiC3bYpwHyUe879hcPPNqTJXnyc2w&oe=67052ED8&_nc_sid=8f1549"
+                },
+                "id": "62546679986",
+                "is_embeds_disabled": null,
+                "is_private": false,
+                "is_unpublished": false,
+                "is_verified": false,
+                "latest_besties_reel_media": null,
+                "latest_reel_media": null,
+                "live_broadcast_id": null,
+                "live_broadcast_visibility": null,
+                "pk": "62546679986",
+                "profile_pic_url": "https://instagram.fcgk30-1.fna.fbcdn.net/v/t51.2885-19/397294756_1378378562775945_6684160243028153414_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fcgk30-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=O8wcn_GXz6QQ7kNvgHCjzLr&_nc_gid=73bff5e17ce6467493bdcbc50bfa40b2&edm=AEhyXUkBAAAA&ccb=7-5&oh=00_AYCMygpWVkVwlZu7Pj_5Ihx3re-l9c6yhOHNPKvec0vitg&oe=67052ED8&_nc_sid=8f1549",
+                "seen": null,
+                "supervision_info": null,
+                "username": "nex_inox"
+            },
+            "usertags": {
+                "in": [
+                    {
+                        "position": [
+                            0.0,
+                            0.0
+                        ],
+                        "user": {
+                            "full_name": "Bakso Gajah Mungkur",
+                            "id": "4579220617",
+                            "is_verified": false,
+                            "pk": "4579220617",
+                            "profile_pic_url": "https://instagram.fcgk29-1.fna.fbcdn.net/v/t51.2885-19/199306322_957675021662851_987993037088847594_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fcgk29-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=phDhsZNbmfgQ7kNvgG3SFdw&_nc_gid=73bff5e17ce6467493bdcbc50bfa40b2&edm=AEhyXUkBAAAA&ccb=7-5&oh=00_AYBQscgojQyBzkmThWPPxclH8EaXM5ObWLgNjVle4RT7Ew&oe=67051286&_nc_sid=8f1549",
+                            "username": "bakso.gajah.mungkur"
+                        }
+                    }
+                ]
+            },
+            "video_dash_manifest": null,
+            "video_versions": [
+                {
+                    "height": 853,
+                    "type": 101,
+                    "url": "https://instagram.fcgk30-1.fna.fbcdn.net/o1/v/t16/f1/m86/3249891C56CC338F1ED70AEBAD29F982_video_dashinit.mp4?stp=dst-mp4&efg=eyJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSIsInZlbmNvZGVfdGFnIjoidnRzX3ZvZF91cmxnZW4uY2xpcHMuYzIuNzIwLmJhc2VsaW5lIn0&_nc_cat=111&vs=857592576337986_2814835001&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8zMjQ5ODkxQzU2Q0MzMzhGMUVENzBBRUJBRDI5Rjk4Ml92aWRlb19kYXNoaW5pdC5tcDQVAALIAQAVAhg6cGFzc3Rocm91Z2hfZXZlcnN0b3JlL0dMVUxXeHR1LXBwM0tqNEZBS2IyTFFiYTQzZ0dia1lMQUFBRhUCAsgBACgAGAAbABUAACaMi4yohoa0QBUCKAJDMywXQD4AAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HAA%3D%3D&ccb=9-4&oh=00_AYB53ukb3Zv9PFCfO-2zZjQFNS2fSJ8OCor0PXeaupM3Mg&oe=67013373&_nc_sid=8f1549",
+                    "width": 480
+                },
+                {
+                    "height": 853,
+                    "type": 103,
+                    "url": "https://instagram.fcgk30-1.fna.fbcdn.net/o1/v/t16/f1/m86/3249891C56CC338F1ED70AEBAD29F982_video_dashinit.mp4?stp=dst-mp4&efg=eyJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSIsInZlbmNvZGVfdGFnIjoidnRzX3ZvZF91cmxnZW4uY2xpcHMuYzIuNzIwLmJhc2VsaW5lIn0&_nc_cat=111&vs=857592576337986_2814835001&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8zMjQ5ODkxQzU2Q0MzMzhGMUVENzBBRUJBRDI5Rjk4Ml92aWRlb19kYXNoaW5pdC5tcDQVAALIAQAVAhg6cGFzc3Rocm91Z2hfZXZlcnN0b3JlL0dMVUxXeHR1LXBwM0tqNEZBS2IyTFFiYTQzZ0dia1lMQUFBRhUCAsgBACgAGAAbABUAACaMi4yohoa0QBUCKAJDMywXQD4AAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HAA%3D%3D&ccb=9-4&oh=00_AYB53ukb3Zv9PFCfO-2zZjQFNS2fSJ8OCor0PXeaupM3Mg&oe=67013373&_nc_sid=8f1549",
+                    "width": 480
+                },
+                {
+                    "height": 853,
+                    "type": 102,
+                    "url": "https://instagram.fcgk30-1.fna.fbcdn.net/o1/v/t16/f1/m86/3249891C56CC338F1ED70AEBAD29F982_video_dashinit.mp4?stp=dst-mp4&efg=eyJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSIsInZlbmNvZGVfdGFnIjoidnRzX3ZvZF91cmxnZW4uY2xpcHMuYzIuNzIwLmJhc2VsaW5lIn0&_nc_cat=111&vs=857592576337986_2814835001&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8zMjQ5ODkxQzU2Q0MzMzhGMUVENzBBRUJBRDI5Rjk4Ml92aWRlb19kYXNoaW5pdC5tcDQVAALIAQAVAhg6cGFzc3Rocm91Z2hfZXZlcnN0b3JlL0dMVUxXeHR1LXBwM0tqNEZBS2IyTFFiYTQzZ0dia1lMQUFBRhUCAsgBACgAGAAbABUAACaMi4yohoa0QBUCKAJDMywXQD4AAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HAA%3D%3D&ccb=9-4&oh=00_AYB53ukb3Zv9PFCfO-2zZjQFNS2fSJ8OCor0PXeaupM3Mg&oe=67013373&_nc_sid=8f1549",
+                    "width": 480
+                }
+            ],
+            "view_count": null
+        },
+        "is_video": true,
+        "owner": {
+            "full_name": "Nex Kirnos | Food Influencer",
+            "id": "62546679986",
+            "iphone_struct": {
+                "__typename": "XDTUserDict",
+                "friendship_status": null,
+                "full_name": "Nex Kirnos | Food Influencer",
+                "hd_profile_pic_url_info": {
+                    "url": "https://instagram.fcgk30-1.fna.fbcdn.net/v/t51.2885-19/397294756_1378378562775945_6684160243028153414_n.jpg?_nc_ht=instagram.fcgk30-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=O8wcn_GXz6QQ7kNvgHCjzLr&_nc_gid=73bff5e17ce6467493bdcbc50bfa40b2&edm=AEhyXUkBAAAA&ccb=7-5&oh=00_AYAdk0kI6uu1lrEp7CiC3bYpwHyUe879hcPPNqTJXnyc2w&oe=67052ED8&_nc_sid=8f1549"
+                },
+                "id": "62546679986",
+                "is_embeds_disabled": null,
+                "is_private": false,
+                "is_unpublished": false,
+                "is_verified": false,
+                "latest_besties_reel_media": null,
+                "latest_reel_media": null,
+                "live_broadcast_id": null,
+                "live_broadcast_visibility": null,
+                "pk": "62546679986",
+                "profile_pic_url": "https://instagram.fcgk30-1.fna.fbcdn.net/v/t51.2885-19/397294756_1378378562775945_6684160243028153414_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fcgk30-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=O8wcn_GXz6QQ7kNvgHCjzLr&_nc_gid=73bff5e17ce6467493bdcbc50bfa40b2&edm=AEhyXUkBAAAA&ccb=7-5&oh=00_AYCMygpWVkVwlZu7Pj_5Ihx3re-l9c6yhOHNPKvec0vitg&oe=67052ED8&_nc_sid=8f1549",
+                "seen": null,
+                "supervision_info": null,
+                "username": "nex_inox"
+            },
+            "is_private": false,
+            "profile_pic_url_hd": "https://instagram.fcgk30-1.fna.fbcdn.net/v/t51.2885-19/397294756_1378378562775945_6684160243028153414_n.jpg?stp=dst-jpg_s150x150&_nc_ht=instagram.fcgk30-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=O8wcn_GXz6QQ7kNvgHCjzLr&_nc_gid=73bff5e17ce6467493bdcbc50bfa40b2&edm=AEhyXUkBAAAA&ccb=7-5&oh=00_AYCMygpWVkVwlZu7Pj_5Ihx3re-l9c6yhOHNPKvec0vitg&oe=67052ED8&_nc_sid=8f1549",
+            "username": "nex_inox"
+        },
+        "shortcode": "C_o3v-rzdwW",
+        "title": null,
+        "video_url": "https://instagram.fcgk30-1.fna.fbcdn.net/o1/v/t16/f1/m86/3249891C56CC338F1ED70AEBAD29F982_video_dashinit.mp4?stp=dst-mp4&efg=eyJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSIsInZlbmNvZGVfdGFnIjoidnRzX3ZvZF91cmxnZW4uY2xpcHMuYzIuNzIwLmJhc2VsaW5lIn0&_nc_cat=111&vs=857592576337986_2814835001&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8zMjQ5ODkxQzU2Q0MzMzhGMUVENzBBRUJBRDI5Rjk4Ml92aWRlb19kYXNoaW5pdC5tcDQVAALIAQAVAhg6cGFzc3Rocm91Z2hfZXZlcnN0b3JlL0dMVUxXeHR1LXBwM0tqNEZBS2IyTFFiYTQzZ0dia1lMQUFBRhUCAsgBACgAGAAbABUAACaMi4yohoa0QBUCKAJDMywXQD4AAAAAAAAYEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HAA%3D%3D&ccb=9-4&oh=00_AYB53ukb3Zv9PFCfO-2zZjQFNS2fSJ8OCor0PXeaupM3Mg&oe=67013373&_nc_sid=8f1549",
+        "viewer_has_liked": false
+    }
+}

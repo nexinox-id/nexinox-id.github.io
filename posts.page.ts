@@ -12,10 +12,12 @@ export const tags = ["post"];
 export default async function* (_data: Lume.Data, _helpers: Lume.Helpers) {
   for (const post of posts) {
     const path = post.replace("_UTC.mp4", "");
-    const url = `/${path}/index.html`;
+    const url = `/${path}/`;
     const image = `/${path}/media-400w.jpg`;
     const text = await getText(post);
-    const [title, ...descriptions] = text.split("\n");
+    const title = text.substring(0, text.indexOf("\n")).trim();
+    const description = text.substring(title.length, text.indexOf("#")).trim();
+    const keywords = text.split(/(\s+)/).filter(t => t.startsWith("#")).map(t => t.substring(1));
     const content = /*html*/ `
 <article class="post">
   <div><video src="./media.mp4" controls autoplay loop /></div>
@@ -26,7 +28,8 @@ export default async function* (_data: Lume.Data, _helpers: Lume.Helpers) {
     yield {
       url,
       title,
-      description: descriptions.join(" "),
+      description,
+      keywords,
       image,
       content,
     };

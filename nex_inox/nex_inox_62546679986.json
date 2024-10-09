@@ -1,0 +1,85 @@
+{
+    "instaloader": {
+        "node_type": "Profile",
+        "version": "4.13.1"
+    },
+    "node": {
+        "ai_agent_type": null,
+        "bio_links": [],
+        "biography": "\ud83c\udf5d sharing informasi kuliner murah meriah\n\ud83e\udd57 Gerombolan Tukang Makan\n- share pengalaman kuliner kalian\n- tag kita, pasti direpost",
+        "biography_with_entities": {
+            "entities": [],
+            "raw_text": "\ud83c\udf5d sharing informasi kuliner murah meriah\n\ud83e\udd57 Gerombolan Tukang Makan\n- share pengalaman kuliner kalian\n- tag kita, pasti direpost"
+        },
+        "blocked_by_viewer": false,
+        "business_address_json": null,
+        "business_category_name": null,
+        "business_contact_method": "UNKNOWN",
+        "business_email": null,
+        "business_phone_number": null,
+        "category_enum": null,
+        "category_name": "Video creator",
+        "connected_fb_page": null,
+        "country_block": false,
+        "edge_follow": {
+            "count": 64
+        },
+        "edge_followed_by": {
+            "count": 374
+        },
+        "edge_mutual_followed_by": {
+            "count": 0,
+            "edges": []
+        },
+        "edge_related_profiles": {
+            "edges": []
+        },
+        "eimu_id": "17846534874087987",
+        "external_url": null,
+        "external_url_linkshimmed": null,
+        "fb_profile_biolink": null,
+        "fbid": "17841462639598334",
+        "followed_by_viewer": false,
+        "follows_viewer": false,
+        "full_name": "Nex Kirnos | Food Influencer",
+        "group_metadata": null,
+        "guardian_id": null,
+        "has_ar_effects": false,
+        "has_blocked_viewer": false,
+        "has_channel": false,
+        "has_clips": true,
+        "has_guides": false,
+        "has_onboarded_to_text_post_app": false,
+        "has_requested_viewer": false,
+        "hide_like_and_view_counts": false,
+        "highlight_reel_count": 8,
+        "id": "62546679986",
+        "is_business_account": false,
+        "is_embeds_disabled": false,
+        "is_guardian_of_viewer": false,
+        "is_joined_recently": false,
+        "is_private": false,
+        "is_professional_account": true,
+        "is_regulated_c18": false,
+        "is_supervised_by_viewer": false,
+        "is_supervised_user": false,
+        "is_supervision_enabled": false,
+        "is_verified": false,
+        "is_verified_by_mv4b": false,
+        "overall_category_name": null,
+        "pinned_channels_list_count": 0,
+        "profile_pic_url": "https://instagram.fcgk16-1.fna.fbcdn.net/v/t51.2885-19/397294756_1378378562775945_6684160243028153414_n.jpg?stp=dst-jpg_e0_s150x150&_nc_ht=instagram.fcgk16-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=fVb-VskUI60Q7kNvgGchjOy&_nc_gid=255af5682953496eb38a07ff06a8aa8b&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AYBFzGCF2g1cy_GbUzAOGAPK4q0-gq1B6N-yC3J4V2AOSQ&oe=670AAD18&_nc_sid=8b3546",
+        "profile_pic_url_hd": "https://instagram.fcgk16-1.fna.fbcdn.net/v/t51.2885-19/397294756_1378378562775945_6684160243028153414_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.fcgk16-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=fVb-VskUI60Q7kNvgGchjOy&_nc_gid=255af5682953496eb38a07ff06a8aa8b&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AYAxns5cxGvu2glg5pK45cyOUo6_tz6sAXdcdL_uXi2Q-g&oe=670AAD18&_nc_sid=8b3546",
+        "pronouns": [],
+        "remove_message_entrypoint": false,
+        "requested_by_viewer": false,
+        "restricted_by_viewer": null,
+        "should_show_category": true,
+        "should_show_public_contacts": false,
+        "show_account_transparency_details": true,
+        "show_text_post_app_badge": null,
+        "transparency_label": null,
+        "transparency_product": null,
+        "username": "nex_inox"
+    }
+}
