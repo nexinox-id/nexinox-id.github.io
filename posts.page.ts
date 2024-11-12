@@ -25,18 +25,18 @@ export default function* ({ comp }: Lume.Data, helpers: Lume.Helpers) {
       name: title,
       description,
       thumbnailUrl: [
-        helpers.url(url + "media-400.avif"),
-        helpers.url(url + "media-400.webp"),
-        helpers.url(url + "media-400.jpg"),
+        url + "media-400.avif",
+        url + "media-400.webp",
+        url + "media-400.jpg",
       ],
-      contentUrl: helpers.url(url + "media.mp4"),
+      contentUrl: url + "media.mp4",
     };
     const nextUrl = (index ? videos[index - 1] : undefined)
       ?.replace("_UTC.mp4", "");
     const prevUrl = videos.at(index + 1)?.replace("_UTC.mp4", "");
     const content = /*html*/ `
 <article class="post">
-  <div><video src="./media.mp4" controls autoplay loop /></div>
+  <div><video src="./media.mp4" poster="./media-400w.jpg" controls autoplay loop /></div>
   <div>${comp.caption({ text })}</div>
   <nav class="grid">
     ${
@@ -60,6 +60,8 @@ export default function* ({ comp }: Lume.Data, helpers: Lume.Helpers) {
         image,
         description,
         keywords,
+        type: "video",
+        "og:video": helpers.url(url + "media.mp4", true),
       },
       tags,
       content,
