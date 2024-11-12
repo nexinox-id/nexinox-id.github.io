@@ -1,4 +1,5 @@
 {
+  "lock": false,
   "imports": {
     "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@9aef52ab8518b2545066bda71861e80185bfe1ac/"
   },
