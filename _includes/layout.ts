@@ -1,5 +1,5 @@
 export default (
-  { title, description, content, year }: Lume.Data,
+  { title, content, year }: Lume.Data,
   _helpers: Lume.Helpers,
 ) => /*html*/ `
 <html lang="id">
@@ -8,7 +8,6 @@ export default (
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
     <title>${title} | NexInox</title>
-    <meta name="description" content="${description}" />
     <link rel="stylesheet" href="/pico.min.css" />
     <link rel="stylesheet" href="/style.css" inline />
   </head>
