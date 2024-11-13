@@ -2,70 +2,123 @@ import type { VideoObject, WithContext } from "npm:schema-dts@1.1.2";
 
 export const tags = ["post"];
 
-export default function* ({ comp }: Lume.Data, helpers: Lume.Helpers) {
-  const videos = Array.from(Deno.readDirSync("nex_inox"))
-    .filter((f) => f.isFile && f.name.endsWith(".mp4"))
-    .map((f) => f.name)
-    .toSorted()
-    .toReversed();
-
-  for (const [index, video] of videos.entries()) {
-    const url = `/${video.replace("_UTC.mp4", "")}/`;
-    const image = url + "media-400w.jpg";
-    const txtFile = "nex_inox/" + video.replace(".mp4", ".txt");
-    const text = Deno.readTextFileSync(txtFile);
-    const title = text.substring(0, text.indexOf("\n")).trim();
-    const description = text.substring(title.length, text.indexOf("#")).trim();
-    const keywords = text.split(/\s+/).filter((t) => t.startsWith("#"))
-      .map((t) => t.substring(1));
-    const tags = keywords.map((s) => s.toLowerCase());
-    const jsonLd: WithContext<VideoObject> = {
-      "@context": "https://schema.org",
-      "@type": "VideoObject",
-      name: title,
-      description,
-      thumbnailUrl: [
-        url + "media-400.avif",
-        url + "media-400.webp",
-        url + "media-400.jpg",
-      ],
-      contentUrl: url + "media.mp4",
-    };
-    const nextUrl = (index ? videos[index - 1] : undefined)
-      ?.replace("_UTC.mp4", "");
-    const prevUrl = videos.at(index + 1)?.replace("_UTC.mp4", "");
-    const content = /*html*/ `
+export default function* ({ comp }: Lume.Data, { slugify, url: urlHelper }: Lume.Helpers) {
+  const datas = Array.from(Deno.readDirSync("nex_inox"))
+    .filter((f) => f.isFile && f.name.endsWith(".json"))
+    .map(({ name }) => {
+      try {
+        const oldUrl = `/${name.replace("_UTC.json", "")}/`;
+        const image = `/images/${name.replace(".json", ".jpg")}`;
+        const video = `/videos/${name.replace(".json", ".mp4")}`;
+        const json = JSON.parse(Deno.readTextFileSync(`nex_inox/${name}`));
+        const { id, date, caption, comments } = json.node;
+        const { like_count, location } = json.node.iphone_struct;
+        const { width, height } = json.node.iphone_struct.video_versions[0];
+        const text = caption as string;
+        const [_, title, description] = text.match(/(.+?)\n(.+)\n#/s)!
+          .map((s) => s.trim());
+        const keywords = text.matchAll(/#([\w-]+)/g).map((v) => v[1])
+          .toArray();
+        const url = slugify(`/p/${title}/`);
+        return {
+          url,
+          oldUrl,
+          image,
+          video,
+          title,
+          description,
+          keywords,
+          id: id as string,
+          date: new Date(date * 1000),
+          caption: caption as string,
+          comment_count: comments as number,
+          like_count: like_count as number,
+          location: location as { lat: number; lng: number; name: string },
+          width: width as number,
+          height: height as number,
+        };
+      } catch {
+        return;
+      }
+    })
+    .filter((data) => data != undefined)
+    .toSorted((d1, d2) => d1.date < d2.date ? 1 : -1);
+  const uniqueUrlDatas = new Map(datas.map((d) => [d.url, d]))
+    .values()
+    .toArray();
+  for (const [index, data] of uniqueUrlDatas.entries()) {
+    try {
+      const {
+        url,
+        oldUrl,
+        title,
+        description,
+        keywords,
+        date,
+        caption,
+        image,
+        video,
+        width,
+        height,
+      } = data;
+      const tags = keywords.map((s) => s.toLowerCase());
+      /* Generate JSON-LD */
+      const jsonLd: WithContext<VideoObject> = {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        name: title,
+        description,
+        thumbnailUrl: image,
+        contentUrl: video,
+        uploadDate: date.toISOString(),
+        width: `${width}`,
+        height: `${height}`,
+      };
+      /* Generate content */
+      const nextUrl = (index ? datas[index - 1] : undefined)?.url;
+      const prevUrl = datas.at(index + 1)?.url;
+      const content = /*html*/ `
 <article class="post">
-  <div><video src="./media.mp4" poster="./media-400w.jpg" controls autoplay loop /></div>
-  <div>${comp.caption({ text })}</div>
+  <div><video src="${video}" poster="${image}" controls autoplay loop /></div>
+  <div>${comp.caption({ text: caption })}</div>
   <nav class="grid">
     ${
-      prevUrl
-        ? `<a href="/${prevUrl}/" role="button" rel="prev">&leftarrow; Sebelumnya</a>`
-        : "<button disabled>&leftarrow; Sebelumnya</button>"
-    }
+        prevUrl
+          ? `<a href="${prevUrl}" role="button" rel="prev">&leftarrow; Sebelumnya</a>`
+          : "<button disabled>&leftarrow; Sebelumnya</button>"
+      }
     ${
-      nextUrl
-        ? `<a href="/${nextUrl}/" role="button" rel="next">Selanjutnya &rightarrow;</a>`
-        : "<button disabled>Selanjutnya &rightarrow;</button>"
-    }
+        nextUrl
+          ? `<a href="${nextUrl}" role="button" rel="next">Selanjutnya &rightarrow;</a>`
+          : "<button disabled>Selanjutnya &rightarrow;</button>"
+      }
   </nav>
 </article>
 `;
 
-    yield {
-      url,
-      title,
-      metas: {
+      yield {
+        url,
+        oldUrl,
+        title,
         image,
-        description,
-        keywords,
-        type: "video",
-        "og:video": helpers.url(url + "media.mp4", true),
-      },
-      tags,
-      content,
-      jsonLd,
-    };
+        video,
+        metas: {
+          image,
+          description,
+          keywords,
+          type: "video.other",
+          "og:video": urlHelper(video, true),
+          "og:video:type": "video/mp4",
+          "og:video:width": `${width}`,
+          "og:video:height": `${height}`,
+        },
+        tags,
+        content,
+        jsonLd,
+        date
+      };
+    } catch (error) {
+      console.warn(`${error}`);
+    }
   }
 }

@@ -7,10 +7,10 @@ export default function* (
   const tags = search.values<string[]>("tags", "post").flat();
   for (const tag of new Set(tags)) {
     if (tag === "post") continue;
-    const url = `/tag/${tag}/`;
+    const url = `/t/${tag}/`;
     const title = `#${tag}`;
-    const posts = search.pages(`post ${tag}`)
-      .map(comp.post)
+    const posts = search.pages(`post ${tag}`, "date=desc")
+      .map(comp.item)
       .join("");
     const content = /*html*/ `
 <article class="tag" transform-images="avif webp jpg 400">

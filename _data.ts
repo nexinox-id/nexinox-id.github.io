@@ -2,7 +2,7 @@ import { basename } from "lume/deps/path.ts";
 
 export const url = ({ sourcePath, outputPath }: Lume.Page) => {
   if (sourcePath.startsWith("/nex_inox/") && sourcePath.endsWith(".jpg")) {
-    return "/" + basename(sourcePath).replace("_UTC", "/media");
+    return "/images/" + basename(sourcePath);
   }
   return outputPath;
 };
