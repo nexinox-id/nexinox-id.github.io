@@ -18,7 +18,7 @@ export default (
           <ul>
             <li>
               <a href="/" data-tooltip="Beranda" data-placement="bottom">
-                <h1>NexInox</h1>
+                <h1><img class="avatar brand" src="/images/profile_pic.jpg" transform-images="avif webp jpg 400" />NexInox</h1>
               </a>
             </li>
           </ul>

@@ -42,6 +42,5 @@ export default lume()
   .use(picture())
   .use(transformImages())
   .copy([".mp4"], (f) => "videos/" + basename(f))
-  .copy(profile, "/profile.jpg")
   .copy("pico.min.css")
   .copy("style.css");

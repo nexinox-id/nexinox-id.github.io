@@ -1,3 +1,38 @@
+.bi {
+  display: inline-block;
+  vertical-align: -.125rem;
+  fill: currentcolor;
+  width: 1rem;
+  height: 1rem;
+}
+
+header .bi {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.avatar {
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.brand {
+  margin-right: 1rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.profile {
+  & > :first-child {
+    justify-self: center;
+  }
+  & > :last-child {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+}
+
 .home,.tag {
   margin: auto;
   display: grid;

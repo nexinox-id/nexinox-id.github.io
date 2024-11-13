@@ -104,7 +104,7 @@ export default function* ({ comp }: Lume.Data, { slugify, url: urlHelper }: Lume
         image,
         video,
         metas: {
-          image,
+          image: image.replace(".jpg", "-400w.jpg"),
           description,
           keywords,
           type: "video.other",
