@@ -21,7 +21,7 @@ jobs:
         run: pip install instaloader
 
       - name: Run instaloder
-        run: instaloader -F nex_inox
+        run: instaloader -F nex_inox --no-compress-json
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5

@@ -12,5 +12,5 @@ export default ({ text }: { text: string }) => {
       /#([\w-]+)/g,
       (_, t) => `<a href="/t/${t.toLowerCase()}">#${t}</a>`,
     );
-  return /* html */ `<h6>${title}</h6><p>${paragraph}</p>`;
+  return /*html*/ `<h6>${title}</h6><p>${paragraph}</p>`;
 };

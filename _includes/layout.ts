@@ -16,7 +16,11 @@ export default (
       <div class="container">
         <nav>
           <ul>
-            <li><a href="/" data-tooltip="Beranda" data-placement="bottom"><h1>NexInox</h1></a></li>
+            <li>
+              <a href="/" data-tooltip="Beranda" data-placement="bottom">
+                <h1>NexInox</h1>
+              </a>
+            </li>
           </ul>
           <ul>
             <li>
@@ -25,7 +29,7 @@ export default (
               </a>
             </li>
             <li>
-              <a href="https://instagram.com/nex_inox" target="_blank" rel="noreferrer noopener" aria-label="Instagram" data-tooltip="Follow Instagram" data-placement="bottom">
+              <a href="https://instagram.com/nex_inox" target="_blank" rel="noreferrer noopener" aria-label="Instagram" data-tooltip="Instagram" data-placement="bottom">
                 <img src="/icons/instagram.svg" inline />
               </a>
             </li>
@@ -42,7 +46,9 @@ export default (
       <div class="container">
         <nav>
           <ul>
-            <li><small>Hak cipta NexInox &copy; ${year}</small></li>
+            <li>
+              <small>Hak cipta NexInox &copy; ${year}</small>
+            </li>
           </ul>
         </nav>
       </div>

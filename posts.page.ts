@@ -58,6 +58,7 @@ export default function* ({ comp }: Lume.Data, { slugify, url: urlHelper }: Lume
         caption,
         image,
         video,
+        location,
         width,
         height,
       } = data;
@@ -115,7 +116,8 @@ export default function* ({ comp }: Lume.Data, { slugify, url: urlHelper }: Lume
         tags,
         content,
         jsonLd,
-        date
+        date,
+        location
       };
     } catch (error) {
       console.warn(`${error}`);
