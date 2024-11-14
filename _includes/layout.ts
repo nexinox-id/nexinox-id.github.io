@@ -8,8 +8,8 @@ export default (
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
     <title>${title} | NexInox</title>
-    <link rel="stylesheet" href="/pico.min.css" />
-    <link rel="stylesheet" href="/style.css" inline />
+    <link rel="preload" as="style" href="/style.css" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <header>

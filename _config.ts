@@ -5,6 +5,7 @@ import feed from "lume/plugins/feed.ts";
 import favicon from "lume/plugins/favicon.ts";
 import inline from "lume/plugins/inline.ts";
 import jsonLd from "lume/plugins/json_ld.ts";
+import lightningCss from "lume/plugins/lightningcss.ts";
 import metas from "lume/plugins/metas.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
 import picture from "lume/plugins/picture.ts";
@@ -32,6 +33,7 @@ export default lume()
   }))
   .use(inline())
   .use(jsonLd())
+  .use(lightningCss())
   .use(metas())
   .use(redirects())
   .use(robots())
@@ -42,5 +44,3 @@ export default lume()
   .use(picture())
   .use(transformImages())
   .copy([".mp4"], (f) => "videos/" + basename(f))
-  .copy("pico.min.css")
-  .copy("style.css");
