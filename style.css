@@ -31,6 +31,7 @@ header .bi {
 .profile {
   & > :first-child {
     justify-self: center;
+    align-self: center;
   }
   & > :last-child {
     display: grid;

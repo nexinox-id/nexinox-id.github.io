@@ -9,7 +9,12 @@ export default (
   return /*html*/ `
     <article class="profile grid">
       <div>
-        <img class="avatar" src="/images/profile_pic.jpg" transform-images="avif webp jpg 400">
+        <img
+          class="avatar"
+          src="/images/profile_pic.jpg"
+          transform-images="avif webp jpg 320@2"
+          alt="NexInox's icon"
+        />
       </div>
       <div>
         <h2>${profileJson.full_name}</h2>
