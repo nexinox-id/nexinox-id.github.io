@@ -6,9 +6,15 @@
   height: 1rem;
 }
 
+header nav {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 header .bi {
   width: 2.5rem;
   height: 2.5rem;
+  vertical-align: .75rem;
 }
 
 .avatar {
@@ -69,6 +75,7 @@ header .bi {
   gap: 3rem;
   & video {
     width: 100%;
+    height: auto;
   }
 }
 @media (min-width: 1280px) {
