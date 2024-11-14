@@ -2,7 +2,10 @@ import type { VideoObject, WithContext } from "npm:schema-dts@1.1.2";
 
 export const tags = ["post"];
 
-export default function* ({ comp }: Lume.Data, { slugify, url: urlHelper }: Lume.Helpers) {
+export default function* (
+  { comp }: Lume.Data,
+  { slugify, url: urlHelper }: Lume.Helpers,
+) {
   const datas = Array.from(Deno.readDirSync("nex_inox"))
     .filter((f) => f.isFile && f.name.endsWith(".json"))
     .map(({ name }) => {
@@ -69,7 +72,8 @@ export default function* ({ comp }: Lume.Data, { slugify, url: urlHelper }: Lume
         "@type": "VideoObject",
         name: title,
         description,
-        thumbnailUrl: image,
+        thumbnailUrl: ["avif", "webp", "jpg"]
+          .map((f) => image.replace(".jpg", "-400w." + f)),
         contentUrl: video,
         uploadDate: date.toISOString(),
         width: `${width}`,
@@ -80,7 +84,17 @@ export default function* ({ comp }: Lume.Data, { slugify, url: urlHelper }: Lume
       const prevUrl = datas.at(index + 1)?.url;
       const content = /*html*/ `
 <article class="post">
-  <div><video src="${video}" poster="${image}" controls autoplay loop /></div>
+  <div>
+    <video
+      src="${video}"
+      poster="${image.replace(".jpg", "-400w.avif")}"
+      width="${width}"
+      height="${height}"
+      controls
+      autoplay
+      loop
+    />
+  </div>
   <div>${comp.caption({ text: caption })}</div>
   <nav class="grid">
     ${
@@ -117,7 +131,7 @@ export default function* ({ comp }: Lume.Data, { slugify, url: urlHelper }: Lume
         content,
         jsonLd,
         date,
-        location
+        location,
       };
     } catch (error) {
       console.warn(`${error}`);
