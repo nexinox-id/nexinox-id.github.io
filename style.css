@@ -76,9 +76,33 @@ header .bi {
   margin: auto;
   display: grid;
   gap: 3rem;
-  & video {
+  > div:has(video) {
+    cursor: pointer;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    place-content: center;
+    > * {
+      grid-area: 1 / 1;
+    }
+  }
+
+  video {
     width: 100%;
     height: auto;
+    border-radius: var(--pico-border-radius);
+    & + button {
+      background-color: #0008;
+      opacity: 1;
+      transition: opacity .2s;
+    }
+    &.playing + button {
+      opacity: 0;
+      pointer-events: none;
+    }
+    & + button > .bi{
+        height: 4rem;
+        width: 4rem;
+    }
   }
 }
 @media (min-width: 1280px) {

@@ -86,14 +86,18 @@ export default function* (
 <article class="post">
   <div>
     <video
-      src="${video}"
       poster="${image.replace(".jpg", "-400w.avif")}"
       width="${width}"
       height="${height}"
-      controls
-      autoplay
+      preload="none"
+      onclick="if(this.paused){this.play();this.classList.add('playing');}else{this.pause();this.classList.remove('playing');}"
       loop
-    />
+    >
+      <source src="${video}" type="video/mp4" />
+    </video>
+    <button class="outline contrast">
+      <img src="/icons/play-circle.svg" inline />
+    </button>
   </div>
   <div>${comp.caption({ text: caption })}</div>
   <nav class="grid">
