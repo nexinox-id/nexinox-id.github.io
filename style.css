@@ -109,7 +109,7 @@ header .bi {
   .post {
     max-width: 1080px;
     grid-template-columns: 2fr 1fr;
-    & nav {
+    & footer {
       grid-column: 1/-1;
     }
   };

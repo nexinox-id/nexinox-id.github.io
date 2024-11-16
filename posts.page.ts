@@ -95,23 +95,25 @@ export default function* (
     >
       <source src="${video}" type="video/mp4" />
     </video>
-    <button class="outline contrast">
-      <img src="/icons/play-circle.svg" inline />
+    <button class="outline contrast" aria-label="Play/Pause">
+      <img src="/icons/play-circle.svg" inline alt="Play" />
     </button>
   </div>
   <div>${comp.caption({ text: caption })}</div>
-  <nav class="grid">
-    ${
-        prevUrl
-          ? `<a href="${prevUrl}" role="button" rel="prev">&leftarrow; Sebelumnya</a>`
-          : "<button disabled>&leftarrow; Sebelumnya</button>"
-      }
-    ${
-        nextUrl
-          ? `<a href="${nextUrl}" role="button" rel="next">Selanjutnya &rightarrow;</a>`
-          : "<button disabled>Selanjutnya &rightarrow;</button>"
-      }
-  </nav>
+  <footer>
+    <nav class="grid">
+      ${
+          prevUrl
+            ? `<a href="${prevUrl}" role="button" rel="prev">&leftarrow; Sebelumnya</a>`
+            : "<button disabled>&leftarrow; Sebelumnya</button>"
+        }
+      ${
+          nextUrl
+            ? `<a href="${nextUrl}" role="button" rel="next">Selanjutnya &rightarrow;</a>`
+            : "<button disabled>Selanjutnya &rightarrow;</button>"
+        }
+    </nav>
+  </footer>
 </article>
 `;
 
