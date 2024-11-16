@@ -3,7 +3,7 @@ export default ({ title, url, image }: Lume.Data) => {
   return /*html*/ `
 <div>
   <a href="${url}" data-tooltip="${caption}&hellip;" aria-label="${caption}">
-    <img src="${image}" alt="${caption}" />
+    <img src="${image}" alt="${caption}" width="400" height="710" loading="lazy" />
   </a>
 </div>`;
 };

@@ -24,6 +24,8 @@ export default (
                     src="/images/profile_pic.jpg"
                     transform-images="avif webp jpg 80@2"
                     alt="NexInox's Icon"
+                    width="80"
+                    height="80"
                   />
                   <span>NexInox</span>
                 </h1>
