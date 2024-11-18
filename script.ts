@@ -2,37 +2,36 @@
 const pagefindModule = "/pagefind/pagefind.js";
 const pagefind = await import(pagefindModule);
 
-const searchInput = document.getElementById("search-input") as
-  | HTMLInputElement
-  | null;
-const searchResult = document.getElementById("search-result") as
-  | HTMLDialogElement
-  | null;
+const searchForm = document.getElementById("search-form") as HTMLFormElement;
+const searchResult = document.getElementById(
+  "search-result",
+) as HTMLDialogElement;
 
-searchInput?.addEventListener(
-  "keydown",
+searchForm.addEventListener(
+  "submit",
   async (e) => {
-    if (e.key === "Enter") {
-      e.preventDefault();
-      const value = (e.target as HTMLInputElement).value;
-      const search = await pagefind.search(value);
-      const datas = search.results.map((r: any) => r.data());
-      if (!searchResult) return;
-      const uList = searchResult.querySelector("ul");
-      if (!uList) return;
-      uList.innerHTML = "";
-      for await (const data of datas) {
-        const li = document.createElement("li");
-        li.innerHTML =
-          `<a href="${data.url}"><strong>${data.meta.title}</strong></a><br/><small>${data.excerpt}</small>`;
-        uList.appendChild(li);
-      }
-      openModal(searchResult);
+    e.preventDefault();
+    const div = searchResult.querySelector("div")!;
+    div.innerHTML = "";
+    div.setAttribute("aria-busy", "true");
+    openModal(searchResult);
+    const value = new FormData(e.currentTarget as HTMLFormElement)
+      .get("search");
+    const search = await pagefind.search(value);
+    const datas = search.results.map((r: any) => r.data());
+    const ul = document.createElement("ul");
+    for await (const data of datas) {
+      const li = document.createElement("li");
+      li.innerHTML =
+        `<a href="${data.url}"><strong>${data.meta.title}</strong></a><br/><small>${data.excerpt}</small>`;
+      ul.appendChild(li);
     }
+    div.removeAttribute("aria-busy");
+    div.appendChild(ul);
   },
 );
 
-searchResult?.querySelector("article > header > button")
+searchResult.querySelector("article > header > button")
   ?.addEventListener("click", (e) => {
     e.preventDefault();
     closeModal(searchResult);

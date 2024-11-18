@@ -16,6 +16,12 @@ header {
   nav {
     margin-left: 1rem;
     margin-right: 1rem;
+    ul:has(form) {
+      flex-grow: 0.5;
+      li {
+        width: 100%;
+      }
+    }
   }
   .bi {
     width: 2rem;
@@ -35,14 +41,26 @@ header {
   }
 }
 @media (min-width: 768px) {
-  header .brand {
-    img {
-      margin-right: .5rem;
+  header {
+    .bi {
+      width: 1.75rem;
+      height: 1.75rem;
     }
-    strong {
-      display: inline;
+    .brand {
+      img {
+        margin-right: .5rem;
+      }
+      strong {
+        display: inline;
+      }
     }
   }
+}
+
+#search-result div {
+  --article: calc(100vh - var(--pico-spacing)*2 );
+  max-height: calc(var(--article) * .8);
+  overflow-y: auto;
 }
 
 

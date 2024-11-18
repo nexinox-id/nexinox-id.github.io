@@ -28,12 +28,14 @@
           </ul>
           <ul>
             <li>
-            <input
-              id="search-input"
-              type="search"
-              placeholder="Cari"
-              aria-label="Cari"
-            />
+              <form id="search-form">
+                <input
+                  type="search"
+                  name="search"
+                  placeholder="Cari"
+                  aria-label="Cari"
+                />
+              </form>
             </li>
           </ul>
           <ul>
@@ -73,8 +75,8 @@
           <button aria-label="Close" rel="prev"></button>
           <h3>Hasil Pencarian</h3>
         </header>
-        <ul>
-        </ul>
+        <div aria-busy="true">
+        </div>
       </article>
     </dialog>
     <script type="module" src="/script.js"></script>
