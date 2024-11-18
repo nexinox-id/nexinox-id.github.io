@@ -1,0 +1,31 @@
+<article class="profile grid">
+  <div>
+    <img
+      class="avatar"
+      src="/images/profile_pic.jpg"
+      transform-images="avif webp jpg 320@2"
+      alt="NexInox's icon"
+      width="320"
+      height="320"
+    />
+  </div>
+  <div>
+    <h2>{{ name }}</h2>
+    <p>{{ biography |> paragraph }}</p>
+    <div class="grid">
+      <div role="button" class="outline secondary" data-tooltip="Pengikut" data-placement="top">
+        {{ followers }}
+        <img src="/icons/people.svg" inline />
+      </div>
+      <div role="button" class="outline secondary" data-tooltip="Video" data-placement="top">
+        {{ posts.length }}
+        <img src="/icons/film.svg" inline />
+      </div>
+    </div>
+  </div>
+</article>
+<article class="home">
+  {{ for post of posts }}
+    {{ comp.ui.postItem(post) }}
+  {{ /for }}
+</article>

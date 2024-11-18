@@ -1,13 +1,9 @@
-export default (
-  { title, content, year }: Lume.Data,
-  _helpers: Lume.Helpers,
-) => /*html*/ `
 <html lang="id">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
-    <title>${title} | NexInox</title>
+    <title>{{title}} | NexInox</title>
     <link rel="preload" as="style" href="/style.css" />
     <link rel="stylesheet" href="/style.css" />
   </head>
@@ -34,7 +30,7 @@ export default (
           </ul>
           <ul>
             <li>
-              <a href="/peta" aria-label="Peta Kuliner" data-tooltip="Peta Kuliner" data-placement="bottom">
+              <a href="/peta/" aria-label="Peta Kuliner" data-tooltip="Peta Kuliner" data-placement="bottom">
                 <img src="/icons/map.svg" inline />
               </a>
             </li>
@@ -49,7 +45,7 @@ export default (
       <hr />
     </header>
     <main class="container">
-      ${content}
+      {{ content }}
     </main>
     <footer>
       <hr />
@@ -57,7 +53,7 @@ export default (
         <nav>
           <ul>
             <li>
-              <small>Hak cipta NexInox &copy; ${year}</small>
+              <small>Hak cipta NexInox &copy; {{ year }}</small>
             </li>
           </ul>
         </nav>
@@ -65,4 +61,3 @@ export default (
     </footer>
   </body>
 </html>
-`;

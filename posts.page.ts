@@ -82,40 +82,15 @@ export default function* (
       /* Generate content */
       const nextUrl = (index ? datas[index - 1] : undefined)?.url;
       const prevUrl = datas.at(index + 1)?.url;
-      const content = /*html*/ `
-<article class="post">
-  <div>
-    <video
-      poster="${image.replace(".jpg", "-400w.avif")}"
-      width="${width}"
-      height="${height}"
-      preload="none"
-      onclick="if(this.paused){this.play();this.classList.add('playing');}else{this.pause();this.classList.remove('playing');}"
-      loop
-    >
-      <source src="${video}" type="video/mp4" />
-    </video>
-    <button class="outline contrast" aria-label="Play/Pause">
-      <img src="/icons/play-circle.svg" inline alt="Play" />
-    </button>
-  </div>
-  <div>${comp.caption({ text: caption })}</div>
-  <footer>
-    <nav class="grid">
-      ${
-          prevUrl
-            ? `<a href="${prevUrl}" role="button" rel="prev">&leftarrow; Sebelumnya</a>`
-            : "<button disabled>&leftarrow; Sebelumnya</button>"
-        }
-      ${
-          nextUrl
-            ? `<a href="${nextUrl}" role="button" rel="next">Selanjutnya &rightarrow;</a>`
-            : "<button disabled>Selanjutnya &rightarrow;</button>"
-        }
-    </nav>
-  </footer>
-</article>
-`;
+      const content = comp.pages.post({
+        video,
+        image,
+        caption,
+        width,
+        height,
+        nextUrl,
+        prevUrl,
+      });
 
       yield {
         url,

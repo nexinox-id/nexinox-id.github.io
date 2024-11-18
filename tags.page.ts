@@ -9,20 +9,9 @@ export default function* (
     if (tag === "post") continue;
     const url = `/t/${tag}/`;
     const title = `#${tag}`;
-    const posts = search.pages(`post ${tag}`, "date=desc")
-      .map(comp.item)
-      .join("");
-    const content = /*html*/ `
-<article class="tag" transform-images="avif webp jpg 400">
-  <h2>#${tag}</h2>
-  ${posts}
-</article>
-`;
+    const posts = search.pages(`post ${tag}`, "date=desc");
+    const content = comp.pages.tag({ title, posts });
 
-    yield {
-      url,
-      title,
-      content,
-    };
+    yield { url, title, content };
   }
 }

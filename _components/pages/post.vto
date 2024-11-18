@@ -1,0 +1,35 @@
+{{ set poster = image.replace(".jpg", "-400w.avif") }}
+<article class="post">
+  <div>
+    <video
+      poster="{{ poster }}"
+      width="{{ width }}"
+      height="{{ height }}"
+      preload="none"
+      onclick="if(this.paused){this.play();this.classList.add('playing');}else{this.pause();this.classList.remove('playing');}"
+      loop
+    >
+      <source src="{{ video }}" type="video/mp4" />
+    </video>
+    <button class="outline contrast" aria-label="Play/Pause">
+      <img src="/icons/play-circle.svg" inline alt="Play" />
+    </button>
+  </div>
+  <div>
+    <p>{{ caption |> paragraph }}</p>
+  </div>
+  <footer>
+    <nav class="grid">
+      {{ if prevUrl }}
+        <a href="{{prevUrl}}" role="button" rel="prev">&leftarrow; Sebelumnya</a>
+      {{ else }}
+        <button disabled>&leftarrow; Sebelumnya</button>
+      {{ /if }}
+      {{ if nextUrl }}
+        <a href="{{nextUrl}}" role="button" rel="next">Selanjutnya &rightarrow;</a>
+      {{ else }}
+        <button disabled>Selanjutnya &rightarrow;</button>
+      {{ /if }}
+    </nav>
+  </footer>
+</article>

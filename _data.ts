@@ -19,7 +19,7 @@ export const profileJson = await Array.fromAsync(Deno.readDir("nex_inox"))
 
 export const description = profileJson.biography;
 
-export const layout = "layout.ts";
+export const layout = "layout.vto";
 
 export const metas = {
   site: "NexInox",

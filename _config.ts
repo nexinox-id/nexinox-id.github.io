@@ -37,10 +37,21 @@ export default lume()
   .use(metas())
   .use(redirects())
   .use(robots())
-  .use(sitemap({query: "date!=undefined"}))
+  .use(sitemap({ query: "date!=undefined" }))
   .use(slugifyUrls())
   .use(svgo())
   .use(minifyHTML())
   .use(picture())
   .use(transformImages())
   .copy([".mp4"], (f) => "videos/" + basename(f))
+  .filter("paragraph", (value: string) =>
+    value.trim()
+      .replaceAll("\n", "<br />")
+      .replaceAll(
+        /@([\w.]+)/g,
+        '<a href="https://instagram.com/$1" target="_blank" rel="noreferrer noopener">@$1</a>',
+      )
+      .replaceAll(
+        /#([\w-]+)/g,
+        (_, t) => `<a href="/t/${t.toLowerCase().replaceAll("_", "-")}">#${t}</a>`,
+      ));
