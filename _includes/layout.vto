@@ -13,19 +13,27 @@
         <nav>
           <ul>
             <li>
-              <a href="/" data-tooltip="Beranda" data-placement="bottom">
-                <h1>
-                  <img
-                    class="avatar brand"
-                    src="/images/profile_pic.jpg"
-                    transform-images="avif webp jpg 80@2"
-                    alt="NexInox's Icon"
-                    width="80"
-                    height="80"
-                  />
-                  <span>NexInox</span>
-                </h1>
+              <a href="/" class="brand" data-tooltip="Beranda" data-placement="bottom">
+                <img
+                  class="avatar"
+                  src="/images/profile_pic.jpg"
+                  transform-images="avif webp jpg 80@2"
+                  alt="NexInox's Icon"
+                  width="80"
+                  height="80"
+                />
+                <strong>NexInox</strong>
               </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+            <input
+              id="search-input"
+              type="search"
+              placeholder="Cari"
+              aria-label="Cari"
+            />
             </li>
           </ul>
           <ul>
@@ -59,5 +67,16 @@
         </nav>
       </div>
     </footer>
+    <dialog id="search-result">
+      <article>
+        <header>
+          <button aria-label="Close" rel="prev"></button>
+          <h3>Hasil Pencarian</h3>
+        </header>
+        <ul>
+        </ul>
+      </article>
+    </dialog>
+    <script type="module" src="/script.js"></script>
   </body>
 </html>

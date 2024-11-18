@@ -8,27 +8,43 @@
   height: 1rem;
 }
 
-header nav {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-header .bi {
-  width: 2.5rem;
-  height: 2.5rem;
-  vertical-align: .75rem;
-}
-
 .avatar {
-  vertical-align: middle;
   border-radius: 50%;
 }
 
-.brand {
-  margin-right: 1rem;
-  height: 2.5rem;
-  width: 2.5rem;
+header {
+  nav {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .bi {
+    width: 2rem;
+    height: 2rem;
+  }
+  .brand {
+    img {
+      max-width: unset;
+      height: 2rem;
+      width: 2rem;
+      vertical-align: sub;
+    }
+    strong {
+      font-size: 2rem;
+      display: none;
+    }
+  }
 }
+@media (min-width: 768px) {
+  header .brand {
+    img {
+      margin-right: .5rem;
+    }
+    strong {
+      display: inline;
+    }
+  }
+}
+
 
 .profile {
   & > :first-child {

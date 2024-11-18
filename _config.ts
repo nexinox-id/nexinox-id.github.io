@@ -1,6 +1,7 @@
 import { basename } from "lume/deps/path.ts";
 import lume from "lume/mod.ts";
 /* Plugins */
+import esbuild from "lume/plugins/esbuild.ts";
 import feed from "lume/plugins/feed.ts";
 import favicon from "lume/plugins/favicon.ts";
 import inline from "lume/plugins/inline.ts";
@@ -8,6 +9,7 @@ import jsonLd from "lume/plugins/json_ld.ts";
 import lightningCss from "lume/plugins/lightningcss.ts";
 import metas from "lume/plugins/metas.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
+import pagefind from "lume/plugins/pagefind.ts";
 import picture from "lume/plugins/picture.ts";
 import redirects from "lume/plugins/redirects.ts";
 import robots from "lume/plugins/robots.ts";
@@ -21,6 +23,7 @@ const profile = await Array.fromAsync(Deno.readDir("nex_inox"))
   .then((file) => "nex_inox/" + file?.name);
 
 export default lume()
+  .use(esbuild({ options: { external: ["/pagefind/*"] } }))
   .use(favicon({ input: profile }))
   .use(feed({
     output: ["/posts.rss", "/posts.json"],
@@ -35,13 +38,14 @@ export default lume()
   .use(jsonLd())
   .use(lightningCss())
   .use(metas())
+  .use(minifyHTML())
+  .use(pagefind({ ui: false }))
+  .use(picture())
   .use(redirects())
   .use(robots())
   .use(sitemap({ query: "date!=undefined" }))
   .use(slugifyUrls())
   .use(svgo())
-  .use(minifyHTML())
-  .use(picture())
   .use(transformImages())
   .copy([".mp4"], (f) => "videos/" + basename(f))
   .filter("paragraph", (value: string) =>
@@ -53,5 +57,6 @@ export default lume()
       )
       .replaceAll(
         /#([\w-]+)/g,
-        (_, t) => `<a href="/t/${t.toLowerCase().replaceAll("_", "-")}">#${t}</a>`,
+        (_, t) =>
+          `<a href="/t/${t.toLowerCase().replaceAll("_", "-")}">#${t}</a>`,
       ));
