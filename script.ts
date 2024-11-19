@@ -65,7 +65,7 @@ const getScrollbarWidth = () => {
 };
 
 // Is scrollbar visible
-const isScrollbarVisible = () => {
+const _isScrollbarVisible = () => {
   return document.body.scrollHeight > screen.height;
 };
 
@@ -78,8 +78,7 @@ const isScrollbarVisible = () => {
 
 const themeSwitcher = {
   // Config
-  _scheme: "auto",
-  menuTarget: "details.dropdown",
+  menuTarget: "details.dropdown.theme-switcher",
   buttonsTarget: "a[data-theme-switcher]",
   buttonAttribute: "data-theme-switcher",
   rootAttribute: "data-theme",
@@ -91,16 +90,26 @@ const themeSwitcher = {
     this.initSwitchers();
   },
 
-  // Get color scheme from local storage
-  get schemeFromLocalStorage() {
-    return window.localStorage?.getItem(this.localStorageKey) ?? this._scheme;
+  get scheme() {
+    return this.schemeFromLocalStorage;
   },
 
-  // Preferred color scheme
-  get preferredColorScheme() {
-    return window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
+  set scheme(value: string) {
+    const rootHtml = document.querySelector("html");
+    if (value == "auto") {
+      rootHtml?.removeAttribute(this.rootAttribute);
+    } else if (value == "dark" || value == "light") {
+      rootHtml?.setAttribute(this.rootAttribute, value);
+    } else return;
+    this.schemeFromLocalStorage = value;
+  },
+
+  get schemeFromLocalStorage() {
+    return window.localStorage?.getItem(this.localStorageKey) ?? "auto";
+  },
+
+  set schemeFromLocalStorage(value: string) {
+    window.localStorage?.setItem(this.localStorageKey, value);
   },
 
   // Init switchers
@@ -112,47 +121,13 @@ const themeSwitcher = {
         (event) => {
           event.preventDefault();
           // Set scheme
-          const scheme = button.getAttribute(this.buttonAttribute)!
-          this.scheme = scheme;
+          this.scheme = button.getAttribute(this.buttonAttribute)!;
           // Close dropdown
-          const menuTarget = document.querySelector<HTMLDetailsElement>(this.menuTarget);
-          if(menuTarget) {
-            menuTarget.removeAttribute("open");
-            menuTarget.dataset.schemeActive = scheme;
-          }
+          document.querySelector(this.menuTarget)?.removeAttribute("open");
         },
         false,
       );
     });
-  },
-
-  // Set scheme
-  set scheme(scheme) {
-    if (scheme == "auto") {
-      this._scheme = this.preferredColorScheme;
-    } else if (scheme == "dark" || scheme == "light") {
-      this._scheme = scheme;
-    }
-    this.applyScheme();
-    this.schemeToLocalStorage();
-  },
-
-  // Get scheme
-  get scheme() {
-    return this._scheme;
-  },
-
-  // Apply scheme
-  applyScheme() {
-    document.querySelector("html")?.setAttribute(
-      this.rootAttribute,
-      this.scheme,
-    );
-  },
-
-  // Store scheme to local storage
-  schemeToLocalStorage() {
-    window.localStorage?.setItem(this.localStorageKey, this.scheme);
   },
 };
 

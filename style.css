@@ -2,7 +2,7 @@
 
 .bi {
   display: inline-block;
-  vertical-align: -.125rem;
+  vertical-align: -0.125rem;
   fill: currentcolor;
   width: 1rem;
   height: 1rem;
@@ -22,8 +22,8 @@ header {
     }
   }
   .bi {
-    width: 1.75rem;
-    height: 1.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
   .brand {
     img {
@@ -41,12 +41,12 @@ header {
 @media (min-width: 768px) {
   header {
     .bi {
-      width: 1.5rem;
-      height: 1.5rem;
+      width: 1.25rem;
+      height: 1.25rem;
     }
     .brand {
       img {
-        margin-right: .5rem;
+        margin-right: 0.25rem;
       }
       strong {
         display: inline;
@@ -56,11 +56,10 @@ header {
 }
 
 #search-result div {
-  --article: calc(100vh - var(--pico-spacing)*2 );
-  max-height: calc(var(--article) * .8);
+  --article: calc(100vh - var(--pico-spacing) * 2);
+  max-height: calc(var(--article) * 0.8);
   overflow-y: auto;
 }
-
 
 .profile {
   & > :first-child {
@@ -74,7 +73,7 @@ header {
   }
 }
 
-.home,.tag {
+.home, .tag {
   margin: auto;
   display: grid;
   gap: 1rem;
@@ -88,17 +87,17 @@ header {
   }
 }
 @media (min-width: 768px) {
-  .home,.tag {
+  .home, .tag {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 1024px) {
-  .home,.tag {
+  .home, .tag {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 1280px) {
-  .home,.tag {
+  .home, .tag {
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -125,15 +124,15 @@ header {
     & + button {
       background-color: #0008;
       opacity: 1;
-      transition: opacity .2s;
+      transition: opacity 0.2s;
     }
     &.playing + button {
       opacity: 0;
       pointer-events: none;
     }
-    & + button > .bi{
-        height: 4rem;
-        width: 4rem;
+    & + button > .bi {
+      height: 4rem;
+      width: 4rem;
     }
   }
 }
@@ -144,7 +143,7 @@ header {
     & footer {
       grid-column: 1/-1;
     }
-  };
+  }
 }
 
 .map #map {
@@ -152,27 +151,31 @@ header {
   min-height: 50svh;
 }
 
-details.dropdown[data-scheme-active] {
-  .bi{
+details.dropdown.theme-switcher {
+  .bi {
     width: 1rem;
     height: 1rem;
   }
   .bi[data-scheme-if] {
     display: none;
   }
-  li{
+  summary {
+    width: calc(2.5rem + var(--pico-nav-link-spacing-horizontal) * 2);
+  }
+  li {
     border-bottom: none;
   }
 }
-details.dropdown[data-scheme-active="auto"] {
+html:not([data-theme]) details.dropdown.theme-switcher {
   .bi[data-scheme-if="auto"] {
     display: inline-block;
   }
   a[data-theme-switcher="auto"] {
     background-color: var(--pico-primary);
+    color: var(--pico-primary-inverse);
   }
 }
-details.dropdown[data-scheme-active="light"] {
+html[data-theme="light"] details.dropdown.theme-switcher {
   .bi[data-scheme-if="light"] {
     display: inline-block;
   }
@@ -181,11 +184,12 @@ details.dropdown[data-scheme-active="light"] {
     color: var(--pico-primary-inverse);
   }
 }
-details.dropdown[data-scheme-active="dark"] {
+html[data-theme="dark"] details.dropdown.theme-switcher {
   .bi[data-scheme-if="dark"] {
     display: inline-block;
   }
   a[data-theme-switcher="dark"] {
     background-color: var(--pico-primary);
+    color: var(--pico-primary-inverse);
   }
 }
