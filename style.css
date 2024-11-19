@@ -122,7 +122,7 @@ header {
     height: auto;
     border-radius: var(--pico-border-radius);
     & + button {
-      background-color: #0008;
+      background-color: rgb(from var(--pico-contrast-inverse) r g b / 50%);
       opacity: 1;
       transition: opacity 0.2s;
     }
