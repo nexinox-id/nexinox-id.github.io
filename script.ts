@@ -158,15 +158,19 @@ searchForm.addEventListener(
       .get("search");
     const search = await pagefind.search(value);
     const datas = search.results.map((r: any) => r.data());
-    const ul = document.createElement("ul");
-    for await (const data of datas) {
-      const li = document.createElement("li");
-      li.innerHTML =
-        `<a href="${data.url}"><strong>${data.meta.title}</strong></a><br/><small>${data.excerpt}</small>`;
-      ul.appendChild(li);
+    if (datas.length) {
+      const ul = document.createElement("ul");
+      for await (const data of datas) {
+        const li = document.createElement("li");
+        li.innerHTML =
+          `<a href="${data.url}"><strong>${data.meta.title}</strong></a><br/><small>${data.excerpt}</small>`;
+        ul.appendChild(li);
+      }
+      div.appendChild(ul);
+    } else {
+      div.innerHTML = "<strong>Tidak dapat menemukan hasil pencarian...</strong>";
     }
     div.removeAttribute("aria-busy");
-    div.appendChild(ul);
   },
 );
 
