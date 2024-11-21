@@ -44,11 +44,11 @@ export default function* (
         return;
       }
     })
-    .filter((data) => data != undefined)
-    .toSorted((d1, d2) => d1.date < d2.date ? 1 : -1);
+    .filter((data) => data != undefined);
   const uniqueUrlDatas = new Map(datas.map((d) => [d.url, d]))
     .values()
-    .toArray();
+    .toArray()
+    .toSorted((d1, d2) => d1.date < d2.date ? 1 : -1);
   for (const [index, data] of uniqueUrlDatas.entries()) {
     try {
       const {
