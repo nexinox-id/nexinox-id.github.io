@@ -15,7 +15,7 @@ export default function* (
         const image = `/images/${name.replace(".json", ".jpg")}`;
         const video = `/videos/${name.replace(".json", ".mp4")}`;
         const json = JSON.parse(Deno.readTextFileSync(`nex_inox/${name}`));
-        const { id, date, caption, comments } = json.node;
+        const { id, date, caption, comments, shortcode } = json.node;
         const { like_count, location } = json.node.iphone_struct;
         const { width, height } = json.node.iphone_struct.video_versions[0];
         const text = caption as string;
@@ -33,6 +33,7 @@ export default function* (
           description,
           keywords,
           id: id as string,
+          shortcode: shortcode as string,
           date: new Date(date * 1000),
           caption: caption as string,
           comment_count: comments as number,
@@ -58,6 +59,7 @@ export default function* (
         title,
         description,
         keywords,
+        shortcode,
         date,
         caption,
         image,
@@ -105,6 +107,7 @@ export default function* (
         },
         jsonLd,
         date,
+        shortcode,
         location,
         caption,
         nextUrl,

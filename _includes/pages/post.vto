@@ -1,36 +1,78 @@
 {{ set poster = image.replace(".jpg", "-400w.avif") }}
 {{ layout "layout.vto" }}
-  <article class="post" data-pagefind-body>
-    <div>
-      <video
-        poster="{{ poster }}"
-        width="{{ width }}"
-        height="{{ height }}"
-        preload="none"
-        onclick="if(this.paused){this.play();this.classList.add('playing');}else{this.pause();this.classList.remove('playing');}"
-        loop
-      >
-        <source src="{{ video }}" type="video/mp4" />
-      </video>
-      <button class="outline secondary" aria-label="Play/Pause">
-        <img src="/icons/play-circle.svg" inline alt="Play" />
-      </button>
-    </div>
-    <div>
-      <p>{{ caption |> paragraph }}</p>
+  <article data-pagefind-body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="https://instagram.com/reel/{{shortcode}}"
+              role="button"
+              class="outline"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img src="/icons/link-45deg.svg" alt="link" inline />
+              <span>Sumber</span>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a
+              href="https://addtoany.com/share#url={{url |> url(true) |> encodeURIComponent}}"
+              role="button"
+              class="outline"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <span>Bagikan</span>
+              <img src="/icons/share.svg" alt="share" inline>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="post">
+      <div>
+        <video
+          poster="{{ poster }}"
+          width="{{ width }}"
+          height="{{ height }}"
+          preload="none"
+          onclick="if(this.paused){this.play();this.classList.add('playing');}else{this.pause();this.classList.remove('playing');}"
+          loop
+        >
+          <source src="{{ video }}" type="video/mp4" />
+        </video>
+        <button class="outline secondary" aria-label="Play/Pause">
+          <img src="/icons/play-circle.svg" inline alt="Play" />
+        </button>
+      </div>
+      <div>
+        <p>{{ caption |> paragraph }}</p>
+      </div>
     </div>
     <footer>
-      <nav class="grid">
-        {{ if prevUrl }}
-          <a href="{{prevUrl}}" role="button" rel="prev">&leftarrow; Sebelumnya</a>
-        {{ else }}
-          <button disabled>&leftarrow; Sebelumnya</button>
-        {{ /if }}
-        {{ if nextUrl }}
-          <a href="{{nextUrl}}" role="button" rel="next">Selanjutnya &rightarrow;</a>
-        {{ else }}
-          <button disabled>Selanjutnya &rightarrow;</button>
-        {{ /if }}
+      <nav>
+        <ul>
+          <li>
+            {{ if prevUrl }}
+              <a href="{{prevUrl}}" role="button" rel="prev">&leftarrow; Sebelumnya</a>
+            {{ else }}
+              <button disabled>&leftarrow; Sebelumnya</button>
+            {{ /if }}
+          </li>
+        </ul>
+        <ul>
+          <li>
+            {{ if nextUrl }}
+              <a href="{{nextUrl}}" role="button" rel="next">Selanjutnya &rightarrow;</a>
+            {{ else }}
+              <button disabled>Selanjutnya &rightarrow;</button>
+            {{ /if }}
+          </li>
+        </ul>
       </nav>
     </footer>
   </article>
