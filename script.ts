@@ -42,12 +42,16 @@ const closeModal = (modal: HTMLDialogElement) => {
   }, animationDuration);
 };
 
-// Close with a click outside
+// Close with a click outside or close button
 document.addEventListener("click", (event) => {
   if (visibleModal === null) return;
   const modalContent = visibleModal.querySelector("article");
+  const closeButton = modalContent?.querySelector(
+    "button[aria-label='Close'][rel='prev']",
+  );
+  const isButtonClick = closeButton?.isSameNode(event.target as HTMLElement);
   const isClickInside = modalContent?.contains(event.target as HTMLElement);
-  !isClickInside && closeModal(visibleModal);
+  (isButtonClick || !isClickInside) && closeModal(visibleModal);
 });
 
 // Close with Esc key
@@ -56,6 +60,17 @@ document.addEventListener("keydown", (event) => {
     closeModal(visibleModal);
   }
 });
+
+// Open modal by button
+document.querySelectorAll("[data-modal-target]")
+  .forEach((element) =>
+    element.addEventListener("click", (event) => {
+      const target = (element as HTMLElement).dataset.modalTarget;
+      const modal = target && document.querySelector(target);
+      if (modal instanceof HTMLDialogElement) openModal(modal);
+      event.preventDefault();
+    })
+  );
 
 // Get scrollbar width
 const getScrollbarWidth = () => {
@@ -95,21 +110,21 @@ const themeSwitcher = {
   },
 
   set scheme(value: string) {
-    const rootHtml = document.querySelector("html");
+    const rootHtml = document.documentElement;
     if (value == "auto") {
-      rootHtml?.removeAttribute(this.rootAttribute);
+      rootHtml.removeAttribute(this.rootAttribute);
     } else if (value == "dark" || value == "light") {
-      rootHtml?.setAttribute(this.rootAttribute, value);
+      rootHtml.setAttribute(this.rootAttribute, value);
     } else return;
     this.schemeFromLocalStorage = value;
   },
 
   get schemeFromLocalStorage() {
-    return window.localStorage?.getItem(this.localStorageKey) ?? "auto";
+    return localStorage.getItem(this.localStorageKey) ?? "auto";
   },
 
   set schemeFromLocalStorage(value: string) {
-    window.localStorage?.setItem(this.localStorageKey, value);
+    localStorage.setItem(this.localStorageKey, value);
   },
 
   // Init switchers
@@ -168,14 +183,29 @@ searchForm.addEventListener(
       }
       div.appendChild(ul);
     } else {
-      div.innerHTML = "<strong>Tidak dapat menemukan hasil pencarian...</strong>";
+      div.innerHTML =
+        "<strong>Tidak dapat menemukan hasil pencarian...</strong>";
     }
     div.removeAttribute("aria-busy");
   },
 );
 
-searchResult.querySelector("article > header > button")
-  ?.addEventListener("click", (e) => {
-    e.preventDefault();
-    closeModal(searchResult);
-  });
+document.querySelectorAll("button.copy-url-button")
+  .forEach((button) =>
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      navigator.clipboard.writeText(document.URL);
+      alert("URL berhasil disalin.");
+    })
+  );
+
+document.querySelectorAll("button.share-button")
+  .forEach((button) =>
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      const url = document.URL;
+      const title = document.title;
+      navigator.share({ url, title })
+        .catch((e) => e.name !== "AbortError" && alert(e));
+    })
+  );

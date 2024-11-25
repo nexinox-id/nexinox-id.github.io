@@ -19,16 +19,10 @@
         </ul>
         <ul>
           <li>
-            <a
-              href="https://addtoany.com/share#url={{url |> url(true) |> encodeURIComponent}}"
-              role="button"
-              class="outline"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
+            <button class="outline" data-modal-target="#share-modal">
               <span>Bagikan</span>
-              <img src="/icons/share.svg" alt="share" inline>
-            </a>
+              <img src="/icons/box-arrow-up.svg" alt="box-arrow-up" inline>
+            </button>
           </li>
         </ul>
       </nav>
@@ -46,7 +40,7 @@
           <source src="{{ video }}" type="video/mp4" />
         </video>
         <button class="outline secondary" aria-label="Play/Pause">
-          <img src="/icons/play-circle.svg" inline alt="Play" />
+          <img src="/icons/play-circle.svg" alt="play-circle" inline />
         </button>
       </div>
       <div>

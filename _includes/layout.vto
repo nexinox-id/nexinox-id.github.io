@@ -41,25 +41,37 @@
           <ul>
             <li>
               <a href="/peta/" aria-label="Peta Kuliner" data-tooltip="Peta Kuliner" data-placement="bottom">
-                <img src="/icons/map.svg" inline />
+                <img src="/icons/map.svg" alt="map" inline />
               </a>
             </li>
             <li>
               <a href="https://instagram.com/nex_inox" target="_blank" rel="noreferrer noopener" aria-label="Instagram" data-tooltip="Instagram" data-placement="bottom">
-                <img src="/icons/instagram.svg" inline />
+                <img src="/icons/instagram.svg" alt="instagram" inline />
               </a>
             </li>
             <li>
               <details class="dropdown theme-switcher">
                 <summary role="button" class="outline">
-                  <img data-scheme-if="auto" src="/icons/circle-half.svg" alt="Theme" inline/>
-                  <img data-scheme-if="light" src="/icons/sun-fill.svg" alt="Theme" inline/>
-                  <img data-scheme-if="dark" src="/icons/moon-stars.svg" alt="Theme" inline/>
+                  <img data-scheme-if="auto" src="/icons/circle-half.svg" alt="circle-half" inline/>
+                  <img data-scheme-if="light" src="/icons/sun-fill.svg" alt="sun-fill" inline/>
+                  <img data-scheme-if="dark" src="/icons/moon-stars.svg" alt="moon-stars" inline/>
                 </summary>
                 <ul>
-                  <li data-tooltip="Auto" data-placement="left"><a href="#" data-theme-switcher="auto"><img src="/icons/circle-half.svg" alt="Auto" inline/></a></li>
-                  <li data-tooltip="Light" data-placement="left"><a href="#" data-theme-switcher="light"><img src="/icons/sun-fill.svg" alt="Light" inline/></a></li>
-                  <li data-tooltip="Dark" data-placement="left"><a href="#" data-theme-switcher="dark"><img src="/icons/moon-stars.svg" alt="Dark" inline/></a></li>
+                  <li data-tooltip="Auto" data-placement="left">
+                    <a href="#" data-theme-switcher="auto">
+                      <img src="/icons/circle-half.svg" alt="circle-half" inline/>
+                    </a>
+                  </li>
+                  <li data-tooltip="Light" data-placement="left">
+                    <a href="#" data-theme-switcher="light">
+                      <img src="/icons/sun-fill.svg" alt="sun-fill" inline/>
+                    </a>
+                  </li>
+                  <li data-tooltip="Dark" data-placement="left">
+                    <a href="#" data-theme-switcher="dark">
+                      <img src="/icons/moon-stars.svg" alt="moon-stars" inline/>
+                    </a>
+                  </li>
                 </ul>
               </details>
             </li>
@@ -90,6 +102,57 @@
           <h3>Hasil Pencarian</h3>
         </header>
         <div aria-busy="true">
+        </div>
+      </article>
+    </dialog>
+    <dialog id="share-modal">
+      <article>
+        <header>
+          <button aria-label="Close" rel="prev"></button>
+          <h3>Bagikan laman ini</h3>
+        </header>
+        <div class="grid">
+          <a
+            href="https://www.facebook.com/sharer/sharer.php?u={{ url |> url(true) |> encodeURIComponent }}&t={{ title |> encodeURIComponent }}"
+            role="button"
+            class="outline"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src="/icons/facebook.svg" alt="facebook" inline>
+            <span>Facebook</span>
+          </a>
+          <a
+            href="https://twitter.com/intent/tweet?url={{ url |> url(true) |> encodeURIComponent }}&text={{ title |> encodeURIComponent }}"
+            role="button"
+            class="outline"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src="/icons/twitter-x.svg" alt="twitter-x" inline>
+            <span>Twitter / X</span>
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?text={{ title |> encodeURIComponent }}%20{{url |> url(true) |> encodeURIComponent}}"
+            role="button"
+            class="outline"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <img src="/icons/whatsapp.svg" alt="whatsapp" inline>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+        <hr />
+        <div class="grid">
+            <button class="outline share-button">
+              <img src="/icons/share.svg" alt="share" inline>
+              <span><em>Web Share</em></span>
+            </button>
+            <button class="outline copy-url-button">
+              <img src="/icons/copy.svg" alt="copy" inline>
+              <span>Salin <em>URL</em></span>
+            </button>
         </div>
       </article>
     </dialog>
