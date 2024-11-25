@@ -1,0 +1,8 @@
+{{ layout "layout.vto" }}
+  <article class="tag">
+    <h2>{{title}}</h2>
+    {{ for post of posts}}
+      {{ comp.ui.postItem(post) }}
+    {{ /for }}
+  </article>
+{{ /layout }}

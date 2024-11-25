@@ -1,6 +1,8 @@
+export const renderOrder = 1;
 export const title = "Peta Kuliner";
+export const layout = "pages/peta.vto";
 
-export default ({ search, comp }: Lume.Data) => {
+export default function*({ search }: Lume.Data) {
   const locations = search.pages("post")
     .filter(d => d.location)
     .map((d) => ({
@@ -9,5 +11,5 @@ export default ({ search, comp }: Lume.Data) => {
       lat: d.location.lat as number,
       lng: d.location.lng as number,
     }));
-  return comp.pages.peta({ locations });
+  yield { locations };
 };

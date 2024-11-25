@@ -1,9 +1,10 @@
 import type { VideoObject, WithContext } from "npm:schema-dts@1.1.2";
 
 export const tags = ["post"];
+export const layout = "pages/post.vto";
 
 export default function* (
-  { comp }: Lume.Data,
+  {}: Lume.Data,
   { slugify, url: urlHelper }: Lume.Helpers,
 ) {
   const datas = Array.from(Deno.readDirSync("nex_inox"))
@@ -82,22 +83,16 @@ export default function* (
       /* Generate content */
       const nextUrl = (index ? datas[index - 1] : undefined)?.url;
       const prevUrl = datas.at(index + 1)?.url;
-      const content = comp.pages.post({
-        video,
-        image,
-        caption,
-        width,
-        height,
-        nextUrl,
-        prevUrl,
-      });
 
       yield {
         url,
         oldUrl,
+        tags,
         title,
         image,
         video,
+        width,
+        height,
         metas: {
           image: image.replace(".jpg", "-400w.jpg"),
           description,
@@ -108,11 +103,12 @@ export default function* (
           "og:video:width": `${width}`,
           "og:video:height": `${height}`,
         },
-        tags,
-        content,
         jsonLd,
         date,
         location,
+        caption,
+        nextUrl,
+        prevUrl,
       };
     } catch (error) {
       console.warn(`${error}`);
