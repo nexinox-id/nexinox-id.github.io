@@ -7,7 +7,7 @@ export default function* (
   {}: Lume.Data,
   { slugify, url: urlHelper }: Lume.Helpers,
 ) {
-  const datas = Array.from(Deno.readDirSync("nex_inox"))
+  let datas = Array.from(Deno.readDirSync("nex_inox"))
     .filter((f) => f.isFile && f.name.endsWith(".json"))
     .map(({ name }) => {
       try {
@@ -47,11 +47,11 @@ export default function* (
       }
     })
     .filter((data) => data != undefined);
-  const uniqueUrlDatas = new Map(datas.map((d) => [d.url, d]))
+  datas = new Map(datas.map((d) => [d.url, d]))
     .values()
     .toArray()
     .toSorted((d1, d2) => d1.date < d2.date ? 1 : -1);
-  for (const [index, data] of uniqueUrlDatas.entries()) {
+  for (const [index, data] of datas.entries()) {
     try {
       const {
         url,
