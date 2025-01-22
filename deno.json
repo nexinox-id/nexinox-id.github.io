@@ -1,7 +1,7 @@
 {
   "lock": false,
   "imports": {
-    "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@9aef52ab8518b2545066bda71861e80185bfe1ac/"
+    "lume/": "https://deno.land/x/lume@v2.5.0/"
   },
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",

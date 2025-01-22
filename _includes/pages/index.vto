@@ -16,11 +16,11 @@
       <div class="grid">
         <div role="button" class="outline secondary" data-tooltip="Pengikut" data-placement="top">
           {{ followers }}
-          <img src="/icons/people.svg" alt="people" inline />
+          <img src="{{ "people" |> icon("bootstrap") }}" alt="people" inline />
         </div>
         <div role="button" class="outline secondary" data-tooltip="Video" data-placement="top">
           {{ posts.length }}
-          <img src="/icons/film.svg" alt="film" inline />
+          <img src="{{ "film" |> icon("bootstrap") }}" alt="film" inline />
         </div>
       </div>
     </div>
