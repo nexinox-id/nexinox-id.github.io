@@ -1,6 +1,7 @@
 {
   "lock": false,
   "imports": {
+    "date-fns": "npm:date-fns@^4.1.0",
     "lume/": "https://deno.land/x/lume@v2.5.0/"
   },
   "tasks": {

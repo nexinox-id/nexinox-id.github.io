@@ -45,6 +45,12 @@
       </div>
       <div>
         <p>{{ caption |> paragraph }}</p>
+        <small>
+          Diunggah: 
+          <time datetime="{{date |> date("ATOM")}}">
+            <em>{{ date |> date("PPPpp") }} WIB</em>
+          </time>
+        </small>
       </div>
     </div>
     <footer>

@@ -1,7 +1,9 @@
+import { id } from "date-fns/locale/id";
 import { basename } from "lume/deps/path.ts";
 import lume from "lume/mod.ts";
 /* Plugins */
 import checkUrls from "lume/plugins/check_urls.ts";
+import date from "lume/plugins/date.ts";
 import esbuild from "lume/plugins/esbuild.ts";
 import feed from "lume/plugins/feed.ts";
 import favicon from "lume/plugins/favicon.ts";
@@ -39,6 +41,7 @@ const paragraphFn = (value: string) =>
     );
 
 export default lume()
+  .use(date({ locales: { id } }))
   .use(esbuild({ options: { external: ["/pagefind/*"] } }))
   .use(favicon({ input: profile }))
   .use(feed({
