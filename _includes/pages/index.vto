@@ -14,11 +14,11 @@
       <h2>{{ name }}</h2>
       <p>{{ biography |> paragraph }}</p>
       <div class="grid">
-        <div role="button" class="outline secondary" data-tooltip="Pengikut" data-placement="top">
+        <div role="button" class="outline secondary" data-tooltip="Pengikut">
           {{ followers }}
           <img src="{{ "people" |> icon("bootstrap") }}" alt="people" inline />
         </div>
-        <div role="button" class="outline secondary" data-tooltip="Video" data-placement="top">
+        <div role="button" class="outline secondary" data-tooltip="Video">
           {{ posts.length }}
           <img src="{{ "film" |> icon("bootstrap") }}" alt="film" inline />
         </div>

@@ -50,6 +50,17 @@
             <em>{{ date |> date("PPPpp") }} WIB</em>
           </time>
         </small>
+        <hr />
+        <div class="grid">
+          <div role="button" class="outline secondary" data-tooltip="Suka">
+            {{ like_count }}
+            <img src="{{ "heart" |> icon("bootstrap") }}" alt="heart" inline />
+          </div>
+          <div role="button" class="outline secondary" data-tooltip="Komentar">
+            {{ comment_count }}
+            <img src="{{ "chat-text" |> icon("bootstrap") }}" alt="chat-text" inline />
+          </div>
+        </div>
       </div>
     </div>
     <footer>
