@@ -1,6 +1,10 @@
 {{ layout "layout.vto" }}
   <link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet" />
   <article class="map">
+    <hgroup>
+      <h2>{{ title }}</h2>
+      <p>{{ description }}</p>
+    </hgroup>
     <div id="map"></div>
   </article>
   <script defer src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
