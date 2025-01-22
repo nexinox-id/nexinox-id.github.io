@@ -18,10 +18,10 @@ export default function* (
         const { id, date, caption, comments, shortcode } = json.node;
         const { like_count, location } = json.node.iphone_struct;
         const { width, height } = json.node.iphone_struct.video_versions[0];
-        const text = caption as string;
-        const [_, title, description] = text.match(/(.+?)\n(.+)\n#/s)!
+        const content = caption as string;
+        const [_, title, description] = content.match(/(.+?)\n(.+)\n#/s)!
           .map((s) => s.trim());
-        const keywords = text.matchAll(/#([\w-]+)/g).map((v) => v[1])
+        const keywords = content.matchAll(/#([\w-]+)/g).map((v) => v[1])
           .toArray();
         const url = slugify(`/p/${title}/`);
         return {
@@ -29,13 +29,13 @@ export default function* (
           oldUrl,
           image,
           video,
+          content,
           title,
           description,
           keywords,
           id: id as string,
           shortcode: shortcode as string,
           date: new Date(date * 1000),
-          caption: caption as string,
           comment_count: comments as number,
           like_count: like_count as number,
           location: location as { lat: number; lng: number; name: string },
@@ -56,12 +56,12 @@ export default function* (
       const {
         url,
         oldUrl,
+        content,
         title,
         description,
         keywords,
         shortcode,
         date,
-        caption,
         image,
         video,
         like_count,
@@ -92,6 +92,7 @@ export default function* (
         url,
         oldUrl,
         tags,
+        content,
         title,
         image,
         video,
@@ -113,7 +114,6 @@ export default function* (
         location,
         like_count,
         comment_count,
-        caption,
         nextUrl,
         prevUrl,
       };
