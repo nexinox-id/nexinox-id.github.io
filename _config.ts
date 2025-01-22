@@ -1,4 +1,6 @@
 import { id } from "date-fns/locale/id";
+import type Site from "lume/core/site.ts";
+import { Page } from "lume/core/file.ts";
 import { basename } from "lume/deps/path.ts";
 import lume from "lume/mod.ts";
 /* Plugins */
@@ -40,6 +42,36 @@ const paragraphFn = (value: string) =>
         `<a href="/t/${t.toLowerCase().replaceAll("_", "-")}/">#${t}</a>`,
     );
 
+type Status = 301 | 302 | 307 | 308;
+type Redirect = [string, string, Status];
+
+const redirectOutputFn = (redirects: Redirect[], site: Site) => {
+  for (const [url, to, statusCode] of redirects) {
+    const timeout = (statusCode === 301 || statusCode === 308) ? 0 : 1;
+    const content = `<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Mengarahkan... | NexInox</title>
+  <meta http-equiv="refresh" content="${timeout}; url=${to}">
+  <link rel="canonical" href="${site.url(to, true)}">
+  <link rel="preload" as="style" href="/style.css" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Mengarahkan...</h1>
+    <a href="${to}">Klik di sini jika peramban tidak mengarahkan otomatis.</a>
+  </main>
+</body>
+</html>`;
+    const page = Page.create({ url, content });
+    site.pages.push(page);
+  }
+};
+
 export default lume()
   .use(date({ locales: { id } }))
   .use(esbuild({ options: { external: ["/pagefind/*"] } }))
@@ -62,7 +94,7 @@ export default lume()
   .use(pagefind({ ui: false }))
   .use(picture())
   .use(purgecss())
-  .use(redirects())
+  .use(redirects({ output: redirectOutputFn }))
   .use(robots())
   .use(sitemap({ query: "date!=undefined" }))
   .use(slugifyUrls())
