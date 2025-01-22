@@ -209,3 +209,17 @@ document.querySelectorAll("button.share-button")
         .catch((e) => e.name !== "AbortError" && alert(e));
     })
   );
+
+document.querySelectorAll(".post video")
+  .forEach((video) => {
+    (video as HTMLVideoElement).addEventListener("click", function (event) {
+      event.preventDefault();
+      if (this.paused) {
+        this.play();
+        this.classList.add("playing");
+      } else {
+        this.pause();
+        this.classList.remove("playing");
+      }
+    });
+  });
