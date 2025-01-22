@@ -1,0 +1,304 @@
+{
+    "instaloader": {
+        "node_type": "Post",
+        "version": "4.13.1"
+    },
+    "node": {
+        "__typename": "GraphVideo",
+        "accessibility_caption": null,
+        "caption": "Makan nasi kari porsi kuli ada di Bintaro Exchange\n\n\ud83c\udfe1: Curry House Coco Ichibanya\n\ud83d\udccd: Bintaro Jaya Xchange Mall 2, Lt. 1\n\nMenu:\n1. Minced Beef Cutlet, Spinach and Cheese Curry Rp 123.000\n2. Beef, Mushroom, and Scrambled Egg Curry Rp 129.000\n3. Chicken Cutlet and Vegetable Curry\n\nfollow: @nex_inox @cocoichibanyaindonesia\n\n#curry #kari #nasikari #nasi #curryhouse #rumahkari #coco #ichibanya #currycoco #curryichibanya #tgr #food #makansiang #makan #kuliner #kulinerbintaro #kulinertangerang #tangerang #nex #inox #kirnos #nexinox #nexkirnos #nex_inox #nex_kirnos",
+        "comments": 0,
+        "date": 1737513294,
+        "display_url": "https://scontent-sin2-2.cdninstagram.com/v/t51.2885-15/474223542_987613303233350_9211228733119941182_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi42NDB4MTEzNi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUifQ&_nc_ht=scontent-sin2-2.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2AFgjrtfCtd1HbXOqfucWsA-WQNSzJazFLT436OI_U-9jQt9OxTNGrOSxOqwAA2ii-8&_nc_ohc=U19Iml4UBVwQ7kNvgH9M-_k&_nc_gid=364081c36aa54fae934cc2416f46032e&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzU1MDg0MDkyMDUxNjA5MjgyMw%3D%3D.3-ccb7-5&oh=00_AYCyMHSH1EmZb6ls3cpo8EDKNvn7d9ZRV-fcOvkojjAIJA&oe=679634B0&_nc_sid=8f1549",
+        "edge_media_preview_like": {
+            "count": 2
+        },
+        "id": "3550840920516092823",
+        "iphone_struct": {
+            "__typename": "XDTMediaDict",
+            "accessibility_caption": null,
+            "ad_id": null,
+            "affiliate_info": null,
+            "all_previous_submitters": null,
+            "audience": null,
+            "boost_unavailable_identifier": null,
+            "boost_unavailable_reason": null,
+            "boosted_status": null,
+            "can_reshare": null,
+            "can_see_insights_as_brand": false,
+            "can_viewer_reshare": true,
+            "caption": {
+                "created_at": 1737513295,
+                "has_translation": null,
+                "pk": "18111768049453223",
+                "text": "Makan nasi kari porsi kuli ada di Bintaro Exchange\n\n\ud83c\udfe1: Curry House Coco Ichibanya\n\ud83d\udccd: Bintaro Jaya Xchange Mall 2, Lt. 1\n\nMenu:\n1. Minced Beef Cutlet, Spinach and Cheese Curry Rp 123.000\n2. Beef, Mushroom, and Scrambled Egg Curry Rp 129.000\n3. Chicken Cutlet and Vegetable Curry\n\nfollow: @nex_inox @cocoichibanyaindonesia\n\n#curry #kari #nasikari #nasi #curryhouse #rumahkari #coco #ichibanya #currycoco #curryichibanya #tgr #food #makansiang #makan #kuliner #kulinerbintaro #kulinertangerang #tangerang #nex #inox #kirnos #nexinox #nexkirnos #nex_inox #nex_kirnos"
+            },
+            "caption_is_edited": false,
+            "carousel_media": null,
+            "carousel_media_count": null,
+            "carousel_parent_id": null,
+            "clips_attribution_info": null,
+            "clips_metadata": {
+                "achievements_info": {
+                    "show_achievements": false
+                },
+                "audio_type": "original_sounds",
+                "music_info": null,
+                "original_sound_info": {
+                    "audio_asset_id": "1951304935358804",
+                    "consumption_info": {
+                        "is_trending_in_clips": false,
+                        "should_mute_audio_reason": "",
+                        "should_mute_audio_reason_type": null
+                    },
+                    "ig_artist": {
+                        "id": "62546679986",
+                        "username": "nex_inox"
+                    },
+                    "is_explicit": false,
+                    "original_audio_title": "Original audio",
+                    "should_mute_audio": false
+                }
+            },
+            "coauthor_producers": [],
+            "code": "DFHHwEJSGOX",
+            "comment_count": 0,
+            "commenting_disabled_for_viewer": null,
+            "comments": null,
+            "comments_disabled": null,
+            "display_uri": "https://scontent-sin2-2.cdninstagram.com/v/t51.2885-15/474223542_987613303233350_9211228733119941182_n.jpg?stp=c0.248.640.640a_dst-jpg_e15_tt6&_nc_ht=scontent-sin2-2.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2AFgjrtfCtd1HbXOqfucWsA-WQNSzJazFLT436OI_U-9jQt9OxTNGrOSxOqwAA2ii-8&_nc_ohc=U19Iml4UBVwQ7kNvgH9M-_k&_nc_gid=364081c36aa54fae934cc2416f46032e&edm=AEhyXUkBAAAA&ccb=7-5&oh=00_AYCwVOWmc3yg-54e6x3QIS3ncn2mrBuMj8m0bKw6KcwG0w&oe=679634B0&_nc_sid=8f1549",
+            "expiring_at": null,
+            "explore": null,
+            "facepile_top_likers": null,
+            "feed_demotion_control": null,
+            "feed_recs_demotion_control": null,
+            "follow_hashtag_info": null,
+            "group": null,
+            "has_audio": true,
+            "has_liked": false,
+            "has_viewer_saved": null,
+            "headline": null,
+            "id": "3550840920516092823_62546679986",
+            "ig_media_sharing_disabled": false,
+            "image_versions2": {
+                "candidates": [
+                    {
+                        "height": 1136,
+                        "url": "https://scontent-sin2-2.cdninstagram.com/v/t51.2885-15/474223542_987613303233350_9211228733119941182_n.jpg?stp=dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi42NDB4MTEzNi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUifQ&_nc_ht=scontent-sin2-2.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2AFgjrtfCtd1HbXOqfucWsA-WQNSzJazFLT436OI_U-9jQt9OxTNGrOSxOqwAA2ii-8&_nc_ohc=U19Iml4UBVwQ7kNvgH9M-_k&_nc_gid=364081c36aa54fae934cc2416f46032e&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzU1MDg0MDkyMDUxNjA5MjgyMw%3D%3D.3-ccb7-5&oh=00_AYCyMHSH1EmZb6ls3cpo8EDKNvn7d9ZRV-fcOvkojjAIJA&oe=679634B0&_nc_sid=8f1549",
+                        "width": 640
+                    },
+                    {
+                        "height": 852,
+                        "url": "https://scontent-sin2-2.cdninstagram.com/v/t51.2885-15/474223542_987613303233350_9211228733119941182_n.jpg?stp=dst-jpg_e15_p480x480_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi42NDB4MTEzNi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUifQ&_nc_ht=scontent-sin2-2.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2AFgjrtfCtd1HbXOqfucWsA-WQNSzJazFLT436OI_U-9jQt9OxTNGrOSxOqwAA2ii-8&_nc_ohc=U19Iml4UBVwQ7kNvgH9M-_k&_nc_gid=364081c36aa54fae934cc2416f46032e&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzU1MDg0MDkyMDUxNjA5MjgyMw%3D%3D.3-ccb7-5&oh=00_AYALiZBzHoqQF8EPqYj7O6VMIPvP5s-6X3lQtt34w5Koww&oe=679634B0&_nc_sid=8f1549",
+                        "width": 480
+                    },
+                    {
+                        "height": 568,
+                        "url": "https://scontent-sin2-2.cdninstagram.com/v/t51.2885-15/474223542_987613303233350_9211228733119941182_n.jpg?stp=dst-jpg_e15_p320x320_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi42NDB4MTEzNi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUifQ&_nc_ht=scontent-sin2-2.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2AFgjrtfCtd1HbXOqfucWsA-WQNSzJazFLT436OI_U-9jQt9OxTNGrOSxOqwAA2ii-8&_nc_ohc=U19Iml4UBVwQ7kNvgH9M-_k&_nc_gid=364081c36aa54fae934cc2416f46032e&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzU1MDg0MDkyMDUxNjA5MjgyMw%3D%3D.3-ccb7-5&oh=00_AYDXFAgukIGvLYy8fz35wW_0QBKFkSVSZey1xjMoYFxixA&oe=679634B0&_nc_sid=8f1549",
+                        "width": 320
+                    },
+                    {
+                        "height": 426,
+                        "url": "https://scontent-sin2-2.cdninstagram.com/v/t51.2885-15/474223542_987613303233350_9211228733119941182_n.jpg?stp=dst-jpg_e15_p240x240_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi42NDB4MTEzNi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUifQ&_nc_ht=scontent-sin2-2.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2AFgjrtfCtd1HbXOqfucWsA-WQNSzJazFLT436OI_U-9jQt9OxTNGrOSxOqwAA2ii-8&_nc_ohc=U19Iml4UBVwQ7kNvgH9M-_k&_nc_gid=364081c36aa54fae934cc2416f46032e&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzU1MDg0MDkyMDUxNjA5MjgyMw%3D%3D.3-ccb7-5&oh=00_AYBHF2uvwbYf11pzhW0Wl1_400BTFgN1A268KIyEIHqr4A&oe=679634B0&_nc_sid=8f1549",
+                        "width": 240
+                    },
+                    {
+                        "height": 1080,
+                        "url": "https://scontent-sin2-2.cdninstagram.com/v/t51.2885-15/474223542_987613303233350_9211228733119941182_n.jpg?stp=c0.248.640.640a_dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi42NDB4MTEzNi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUifQ&_nc_ht=scontent-sin2-2.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2AFgjrtfCtd1HbXOqfucWsA-WQNSzJazFLT436OI_U-9jQt9OxTNGrOSxOqwAA2ii-8&_nc_ohc=U19Iml4UBVwQ7kNvgH9M-_k&_nc_gid=364081c36aa54fae934cc2416f46032e&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzU1MDg0MDkyMDUxNjA5MjgyMw%3D%3D.3-ccb7-5&oh=00_AYCwVOWmc3yg-54e6x3QIS3ncn2mrBuMj8m0bKw6KcwG0w&oe=679634B0&_nc_sid=8f1549",
+                        "width": 1080
+                    },
+                    {
+                        "height": 750,
+                        "url": "https://scontent-sin2-2.cdninstagram.com/v/t51.2885-15/474223542_987613303233350_9211228733119941182_n.jpg?stp=c0.248.640.640a_dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi42NDB4MTEzNi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUifQ&_nc_ht=scontent-sin2-2.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2AFgjrtfCtd1HbXOqfucWsA-WQNSzJazFLT436OI_U-9jQt9OxTNGrOSxOqwAA2ii-8&_nc_ohc=U19Iml4UBVwQ7kNvgH9M-_k&_nc_gid=364081c36aa54fae934cc2416f46032e&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzU1MDg0MDkyMDUxNjA5MjgyMw%3D%3D.3-ccb7-5&oh=00_AYCwVOWmc3yg-54e6x3QIS3ncn2mrBuMj8m0bKw6KcwG0w&oe=679634B0&_nc_sid=8f1549",
+                        "width": 750
+                    },
+                    {
+                        "height": 640,
+                        "url": "https://scontent-sin2-2.cdninstagram.com/v/t51.2885-15/474223542_987613303233350_9211228733119941182_n.jpg?stp=c0.248.640.640a_dst-jpg_e15_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi42NDB4MTEzNi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUifQ&_nc_ht=scontent-sin2-2.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2AFgjrtfCtd1HbXOqfucWsA-WQNSzJazFLT436OI_U-9jQt9OxTNGrOSxOqwAA2ii-8&_nc_ohc=U19Iml4UBVwQ7kNvgH9M-_k&_nc_gid=364081c36aa54fae934cc2416f46032e&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzU1MDg0MDkyMDUxNjA5MjgyMw%3D%3D.3-ccb7-5&oh=00_AYCwVOWmc3yg-54e6x3QIS3ncn2mrBuMj8m0bKw6KcwG0w&oe=679634B0&_nc_sid=8f1549",
+                        "width": 640
+                    },
+                    {
+                        "height": 480,
+                        "url": "https://scontent-sin2-2.cdninstagram.com/v/t51.2885-15/474223542_987613303233350_9211228733119941182_n.jpg?stp=c0.248.640.640a_dst-jpg_e15_s480x480_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi42NDB4MTEzNi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUifQ&_nc_ht=scontent-sin2-2.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2AFgjrtfCtd1HbXOqfucWsA-WQNSzJazFLT436OI_U-9jQt9OxTNGrOSxOqwAA2ii-8&_nc_ohc=U19Iml4UBVwQ7kNvgH9M-_k&_nc_gid=364081c36aa54fae934cc2416f46032e&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzU1MDg0MDkyMDUxNjA5MjgyMw%3D%3D.3-ccb7-5&oh=00_AYA-6PDooHwFuK-r92k8GK-V_wZmDqBYHGV390i-cATQwg&oe=679634B0&_nc_sid=8f1549",
+                        "width": 480
+                    },
+                    {
+                        "height": 320,
+                        "url": "https://scontent-sin2-2.cdninstagram.com/v/t51.2885-15/474223542_987613303233350_9211228733119941182_n.jpg?stp=c0.248.640.640a_dst-jpg_e15_s320x320_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi42NDB4MTEzNi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUifQ&_nc_ht=scontent-sin2-2.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2AFgjrtfCtd1HbXOqfucWsA-WQNSzJazFLT436OI_U-9jQt9OxTNGrOSxOqwAA2ii-8&_nc_ohc=U19Iml4UBVwQ7kNvgH9M-_k&_nc_gid=364081c36aa54fae934cc2416f46032e&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzU1MDg0MDkyMDUxNjA5MjgyMw%3D%3D.3-ccb7-5&oh=00_AYBdwZAeWDPsicBDPHGTwZxL44E_0-pSAIT7oXCvSexA5g&oe=679634B0&_nc_sid=8f1549",
+                        "width": 320
+                    },
+                    {
+                        "height": 240,
+                        "url": "https://scontent-sin2-2.cdninstagram.com/v/t51.2885-15/474223542_987613303233350_9211228733119941182_n.jpg?stp=c0.248.640.640a_dst-jpg_e15_s240x240_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi42NDB4MTEzNi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUifQ&_nc_ht=scontent-sin2-2.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2AFgjrtfCtd1HbXOqfucWsA-WQNSzJazFLT436OI_U-9jQt9OxTNGrOSxOqwAA2ii-8&_nc_ohc=U19Iml4UBVwQ7kNvgH9M-_k&_nc_gid=364081c36aa54fae934cc2416f46032e&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzU1MDg0MDkyMDUxNjA5MjgyMw%3D%3D.3-ccb7-5&oh=00_AYDz2yeH5QNP9kkF_wZ14SoNpDSmE3nzOHde7aK6PNClDQ&oe=679634B0&_nc_sid=8f1549",
+                        "width": 240
+                    },
+                    {
+                        "height": 150,
+                        "url": "https://scontent-sin2-2.cdninstagram.com/v/t51.2885-15/474223542_987613303233350_9211228733119941182_n.jpg?stp=c0.248.640.640a_dst-jpg_e15_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi42NDB4MTEzNi5zZHIuZjcxODc4LmRlZmF1bHRfY292ZXJfZnJhbWUifQ&_nc_ht=scontent-sin2-2.cdninstagram.com&_nc_cat=102&_nc_oc=Q6cZ2AFgjrtfCtd1HbXOqfucWsA-WQNSzJazFLT436OI_U-9jQt9OxTNGrOSxOqwAA2ii-8&_nc_ohc=U19Iml4UBVwQ7kNvgH9M-_k&_nc_gid=364081c36aa54fae934cc2416f46032e&edm=AEhyXUkBAAAA&ccb=7-5&ig_cache_key=MzU1MDg0MDkyMDUxNjA5MjgyMw%3D%3D.3-ccb7-5&oh=00_AYBRQKEZn-g40aVzeTbAGCAv7XvDKaaUW8DzADwgzSCAnw&oe=679634B0&_nc_sid=8f1549",
+                        "width": 150
+                    }
+                ]
+            },
+            "inventory_source": null,
+            "invited_coauthor_producers": [],
+            "is_dash_eligible": null,
+            "is_paid_partnership": false,
+            "is_seen": null,
+            "like_and_view_counts_disabled": false,
+            "like_count": 2,
+            "link": null,
+            "location": {
+                "lat": -6.2852086242593,
+                "lng": 106.72812932,
+                "name": "Bintaro Jaya Xchange Mall",
+                "pk": 832399170,
+                "profile_pic_url": null
+            },
+            "main_feed_carousel_starting_media_id": null,
+            "media_cropping_info": {
+                "square_crop": null
+            },
+            "media_level_comment_controls": null,
+            "media_overlay_info": null,
+            "media_type": 2,
+            "number_of_qualities": null,
+            "open_carousel_submission_state": null,
+            "organic_tracking_token": "eyJ2ZXJzaW9uIjo1LCJwYXlsb2FkIjp7ImlzX2FuYWx5dGljc190cmFja2VkIjp0cnVlLCJ1dWlkIjoiMzY0MDgxYzM2YWE1NGZhZTkzNGNjMjQxNmY0NjAzMmUzNTUwODQwOTIwNTE2MDkyODIzIn0sInNpZ25hdHVyZSI6IiJ9",
+            "original_height": 1920,
+            "original_width": 1080,
+            "owner": {
+                "__typename": "XDTUserDict",
+                "friendship_status": null,
+                "id": "62546679986",
+                "is_embeds_disabled": false,
+                "is_private": false,
+                "is_unpublished": false,
+                "is_verified": false,
+                "pk": "62546679986",
+                "profile_pic_url": "https://scontent-sin2-2.cdninstagram.com/v/t51.2885-19/397294756_1378378562775945_6684160243028153414_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=scontent-sin2-2.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2AFgjrtfCtd1HbXOqfucWsA-WQNSzJazFLT436OI_U-9jQt9OxTNGrOSxOqwAA2ii-8&_nc_ohc=wWWZY7ZMxS4Q7kNvgHjP1oG&_nc_gid=364081c36aa54fae934cc2416f46032e&edm=AEhyXUkBAAAA&ccb=7-5&oh=00_AYBKv0kmcoYISr-z-keYNIFnrbQwMWhpVoZ60xwc1eHmhg&oe=679633D8&_nc_sid=8f1549",
+                "show_account_transparency_details": true,
+                "supervision_info": null,
+                "transparency_label": null,
+                "transparency_product": null,
+                "transparency_product_enabled": false,
+                "username": "nex_inox"
+            },
+            "photo_of_you": false,
+            "pk": "3550840920516092823",
+            "preview": null,
+            "previous_submitter": null,
+            "product_type": "clips",
+            "saved_collection_ids": null,
+            "share_urls": null,
+            "sharing_friction_info": {
+                "bloks_app_url": null,
+                "should_have_sharing_friction": false
+            },
+            "social_context": null,
+            "sponsor_tags": null,
+            "story_cta": null,
+            "taken_at": 1737513294,
+            "thumbnails": null,
+            "timeline_pinned_user_ids": [],
+            "title": null,
+            "top_likers": null,
+            "upcoming_event": null,
+            "user": {
+                "__typename": "XDTUserDict",
+                "friendship_status": null,
+                "full_name": "Nex Kirnos | Food Influencer",
+                "hd_profile_pic_url_info": {
+                    "url": "https://scontent-sin2-2.cdninstagram.com/v/t51.2885-19/397294756_1378378562775945_6684160243028153414_n.jpg?_nc_ht=scontent-sin2-2.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2AFgjrtfCtd1HbXOqfucWsA-WQNSzJazFLT436OI_U-9jQt9OxTNGrOSxOqwAA2ii-8&_nc_ohc=wWWZY7ZMxS4Q7kNvgHjP1oG&_nc_gid=364081c36aa54fae934cc2416f46032e&edm=AEhyXUkBAAAA&ccb=7-5&oh=00_AYC8hej_lvyH578rol2EBvJqOPInUnwb4HF0I8xvHd9x8w&oe=679633D8&_nc_sid=8f1549"
+                },
+                "id": "62546679986",
+                "is_embeds_disabled": false,
+                "is_private": false,
+                "is_unpublished": false,
+                "is_verified": false,
+                "latest_besties_reel_media": null,
+                "latest_reel_media": null,
+                "live_broadcast_id": null,
+                "live_broadcast_visibility": null,
+                "pk": "62546679986",
+                "profile_pic_url": "https://scontent-sin2-2.cdninstagram.com/v/t51.2885-19/397294756_1378378562775945_6684160243028153414_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=scontent-sin2-2.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2AFgjrtfCtd1HbXOqfucWsA-WQNSzJazFLT436OI_U-9jQt9OxTNGrOSxOqwAA2ii-8&_nc_ohc=wWWZY7ZMxS4Q7kNvgHjP1oG&_nc_gid=364081c36aa54fae934cc2416f46032e&edm=AEhyXUkBAAAA&ccb=7-5&oh=00_AYBKv0kmcoYISr-z-keYNIFnrbQwMWhpVoZ60xwc1eHmhg&oe=679633D8&_nc_sid=8f1549",
+                "seen": null,
+                "supervision_info": null,
+                "username": "nex_inox"
+            },
+            "usertags": {
+                "in": [
+                    {
+                        "position": [
+                            0.0,
+                            0.0
+                        ],
+                        "user": {
+                            "full_name": "CoCo ICHIBANYA Indonesia",
+                            "id": "1087546131",
+                            "is_verified": false,
+                            "pk": "1087546131",
+                            "profile_pic_url": "https://scontent-sin11-1.cdninstagram.com/v/t51.2885-19/13113833_578533868986469_1379356181_a.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=scontent-sin11-1.cdninstagram.com&_nc_cat=105&_nc_oc=Q6cZ2AFgjrtfCtd1HbXOqfucWsA-WQNSzJazFLT436OI_U-9jQt9OxTNGrOSxOqwAA2ii-8&_nc_ohc=4E6UCIUkyAoQ7kNvgF2liyt&_nc_gid=364081c36aa54fae934cc2416f46032e&edm=AEhyXUkBAAAA&ccb=7-5&oh=00_AYDxPD_z8xrQut0UfKbAAutQWvLA2uX3_GmxAKJp1GGftQ&oe=679637E0&_nc_sid=8f1549",
+                            "username": "cocoichibanyaindonesia"
+                        }
+                    }
+                ]
+            },
+            "video_dash_manifest": null,
+            "video_versions": [
+                {
+                    "height": 852,
+                    "type": 101,
+                    "url": "https://scontent-sin6-4.cdninstagram.com/o1/v/t16/f2/m86/AQMC_qbDOrta1mYcE6MbqR6P61Z24sKbFGLvRWsg1LME-6AiYrhuUVwhTHs4BTNSK-LOhIogBvapoh9xtoOazsmQ0DlUm8BFJX3A2cQ.mp4?stp=dst-mp4&efg=eyJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSIsInZlbmNvZGVfdGFnIjoidnRzX3ZvZF91cmxnZW4uY2xpcHMuYzIuNzIwLmJhc2VsaW5lIn0&_nc_cat=100&vs=1689526401980437_3579042087&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9DODQ4RjhCRTU4OTg1OTVDOTYwMDg1NkU4MjI0Q0M5N192aWRlb19kYXNoaW5pdC5tcDQVAALIAQAVAhg6cGFzc3Rocm91Z2hfZXZlcnN0b3JlL0dKSEdTeHdFRVZRV0RLNEZBQzVkQnVralFkTU1icV9FQUFBRhUCAsgBACgAGAAbABUAACbQko%2FprKSIQBUCKAJDMywXQEtMzMzMzM0YEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HAA%3D%3D&ccb=9-4&oh=00_AYCIL75DWr--CrQUEvFhGQmUg2__uuaRH8ihdu7Pwi5t1g&oe=67925487&_nc_sid=8f1549",
+                    "width": 480
+                },
+                {
+                    "height": 852,
+                    "type": 103,
+                    "url": "https://scontent-sin6-4.cdninstagram.com/o1/v/t16/f2/m86/AQMC_qbDOrta1mYcE6MbqR6P61Z24sKbFGLvRWsg1LME-6AiYrhuUVwhTHs4BTNSK-LOhIogBvapoh9xtoOazsmQ0DlUm8BFJX3A2cQ.mp4?stp=dst-mp4&efg=eyJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSIsInZlbmNvZGVfdGFnIjoidnRzX3ZvZF91cmxnZW4uY2xpcHMuYzIuNzIwLmJhc2VsaW5lIn0&_nc_cat=100&vs=1689526401980437_3579042087&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9DODQ4RjhCRTU4OTg1OTVDOTYwMDg1NkU4MjI0Q0M5N192aWRlb19kYXNoaW5pdC5tcDQVAALIAQAVAhg6cGFzc3Rocm91Z2hfZXZlcnN0b3JlL0dKSEdTeHdFRVZRV0RLNEZBQzVkQnVralFkTU1icV9FQUFBRhUCAsgBACgAGAAbABUAACbQko%2FprKSIQBUCKAJDMywXQEtMzMzMzM0YEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HAA%3D%3D&ccb=9-4&oh=00_AYCIL75DWr--CrQUEvFhGQmUg2__uuaRH8ihdu7Pwi5t1g&oe=67925487&_nc_sid=8f1549",
+                    "width": 480
+                },
+                {
+                    "height": 852,
+                    "type": 102,
+                    "url": "https://scontent-sin6-4.cdninstagram.com/o1/v/t16/f2/m86/AQMC_qbDOrta1mYcE6MbqR6P61Z24sKbFGLvRWsg1LME-6AiYrhuUVwhTHs4BTNSK-LOhIogBvapoh9xtoOazsmQ0DlUm8BFJX3A2cQ.mp4?stp=dst-mp4&efg=eyJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSIsInZlbmNvZGVfdGFnIjoidnRzX3ZvZF91cmxnZW4uY2xpcHMuYzIuNzIwLmJhc2VsaW5lIn0&_nc_cat=100&vs=1689526401980437_3579042087&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9DODQ4RjhCRTU4OTg1OTVDOTYwMDg1NkU4MjI0Q0M5N192aWRlb19kYXNoaW5pdC5tcDQVAALIAQAVAhg6cGFzc3Rocm91Z2hfZXZlcnN0b3JlL0dKSEdTeHdFRVZRV0RLNEZBQzVkQnVralFkTU1icV9FQUFBRhUCAsgBACgAGAAbABUAACbQko%2FprKSIQBUCKAJDMywXQEtMzMzMzM0YEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HAA%3D%3D&ccb=9-4&oh=00_AYCIL75DWr--CrQUEvFhGQmUg2__uuaRH8ihdu7Pwi5t1g&oe=67925487&_nc_sid=8f1549",
+                    "width": 480
+                }
+            ],
+            "view_count": null
+        },
+        "is_video": true,
+        "owner": {
+            "full_name": "Nex Kirnos | Food Influencer",
+            "id": "62546679986",
+            "iphone_struct": {
+                "__typename": "XDTUserDict",
+                "friendship_status": null,
+                "full_name": "Nex Kirnos | Food Influencer",
+                "hd_profile_pic_url_info": {
+                    "url": "https://scontent-sin2-2.cdninstagram.com/v/t51.2885-19/397294756_1378378562775945_6684160243028153414_n.jpg?_nc_ht=scontent-sin2-2.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2AFgjrtfCtd1HbXOqfucWsA-WQNSzJazFLT436OI_U-9jQt9OxTNGrOSxOqwAA2ii-8&_nc_ohc=wWWZY7ZMxS4Q7kNvgHjP1oG&_nc_gid=364081c36aa54fae934cc2416f46032e&edm=AEhyXUkBAAAA&ccb=7-5&oh=00_AYC8hej_lvyH578rol2EBvJqOPInUnwb4HF0I8xvHd9x8w&oe=679633D8&_nc_sid=8f1549"
+                },
+                "id": "62546679986",
+                "is_embeds_disabled": false,
+                "is_private": false,
+                "is_unpublished": false,
+                "is_verified": false,
+                "latest_besties_reel_media": null,
+                "latest_reel_media": null,
+                "live_broadcast_id": null,
+                "live_broadcast_visibility": null,
+                "pk": "62546679986",
+                "profile_pic_url": "https://scontent-sin2-2.cdninstagram.com/v/t51.2885-19/397294756_1378378562775945_6684160243028153414_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=scontent-sin2-2.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2AFgjrtfCtd1HbXOqfucWsA-WQNSzJazFLT436OI_U-9jQt9OxTNGrOSxOqwAA2ii-8&_nc_ohc=wWWZY7ZMxS4Q7kNvgHjP1oG&_nc_gid=364081c36aa54fae934cc2416f46032e&edm=AEhyXUkBAAAA&ccb=7-5&oh=00_AYBKv0kmcoYISr-z-keYNIFnrbQwMWhpVoZ60xwc1eHmhg&oe=679633D8&_nc_sid=8f1549",
+                "seen": null,
+                "supervision_info": null,
+                "username": "nex_inox"
+            },
+            "is_private": false,
+            "profile_pic_url_hd": "https://scontent-sin2-2.cdninstagram.com/v/t51.2885-19/397294756_1378378562775945_6684160243028153414_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=scontent-sin2-2.cdninstagram.com&_nc_cat=109&_nc_oc=Q6cZ2AFgjrtfCtd1HbXOqfucWsA-WQNSzJazFLT436OI_U-9jQt9OxTNGrOSxOqwAA2ii-8&_nc_ohc=wWWZY7ZMxS4Q7kNvgHjP1oG&_nc_gid=364081c36aa54fae934cc2416f46032e&edm=AEhyXUkBAAAA&ccb=7-5&oh=00_AYBKv0kmcoYISr-z-keYNIFnrbQwMWhpVoZ60xwc1eHmhg&oe=679633D8&_nc_sid=8f1549",
+            "username": "nex_inox"
+        },
+        "shortcode": "DFHHwEJSGOX",
+        "title": null,
+        "video_url": "https://scontent-sin6-4.cdninstagram.com/o1/v/t16/f2/m86/AQMC_qbDOrta1mYcE6MbqR6P61Z24sKbFGLvRWsg1LME-6AiYrhuUVwhTHs4BTNSK-LOhIogBvapoh9xtoOazsmQ0DlUm8BFJX3A2cQ.mp4?stp=dst-mp4&efg=eyJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSIsInZlbmNvZGVfdGFnIjoidnRzX3ZvZF91cmxnZW4uY2xpcHMuYzIuNzIwLmJhc2VsaW5lIn0&_nc_cat=100&vs=1689526401980437_3579042087&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9DODQ4RjhCRTU4OTg1OTVDOTYwMDg1NkU4MjI0Q0M5N192aWRlb19kYXNoaW5pdC5tcDQVAALIAQAVAhg6cGFzc3Rocm91Z2hfZXZlcnN0b3JlL0dKSEdTeHdFRVZRV0RLNEZBQzVkQnVralFkTU1icV9FQUFBRhUCAsgBACgAGAAbABUAACbQko%2FprKSIQBUCKAJDMywXQEtMzMzMzM0YEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HAA%3D%3D&ccb=9-4&oh=00_AYCIL75DWr--CrQUEvFhGQmUg2__uuaRH8ihdu7Pwi5t1g&oe=67925487&_nc_sid=8f1549",
+        "viewer_has_liked": false
+    }
+}
