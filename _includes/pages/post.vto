@@ -1,6 +1,6 @@
 {{ set poster = image.replace(".jpg", "-400w.avif") }}
 {{ layout "layout.vto" }}
-  <article data-pagefind-body>
+  <article>
     <header>
       <nav>
         <ul>
@@ -43,7 +43,7 @@
         </button>
       </div>
       <div>
-        <p>{{ content |> paragraph }}</p>
+        <p data-pagefind-body>{{ content |> paragraph }}</p>
         <small>
           Diunggah: 
           <time datetime="{{date |> date("ATOM")}}">
