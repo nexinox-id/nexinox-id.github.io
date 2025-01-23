@@ -153,23 +153,20 @@ themeSwitcher.init();
  * Search
  */
 
-const pagefindModule = "/pagefind/pagefind.js";
-const pagefind = await import(pagefindModule);
-
-const searchForm = document.getElementById("search-form") as HTMLFormElement;
-const searchResult = document.getElementById(
-  "search-result",
-) as HTMLDialogElement;
-
-searchForm.addEventListener(
+document.getElementById("search-form")?.addEventListener(
   "submit",
   async (e) => {
     e.preventDefault();
-    const div = searchResult.querySelector("div")!;
+    const searchResult = document.getElementById("search-result");
+    if (!searchResult) return;
+    const div = searchResult.querySelector("div");
+    if (!div) return;
     div.innerHTML = "";
     div.setAttribute("aria-busy", "true");
-    openModal(searchResult);
-    const value = new FormData(e.currentTarget as HTMLFormElement)
+    openModal(searchResult as HTMLDialogElement);
+    const pagefindModule = "/pagefind/pagefind.js";
+    const pagefind = await import(pagefindModule);
+    const value = new FormData(e.target as HTMLFormElement)
       .get("search");
     const search = await pagefind.search(value);
     const datas = search.results.map((r: any) => r.data());
@@ -192,9 +189,9 @@ searchForm.addEventListener(
 
 document.querySelectorAll("button.copy-url-button")
   .forEach((button) =>
-    button.addEventListener("click", (event) => {
+    button.addEventListener("click", async (event) => {
       event.preventDefault();
-      navigator.clipboard.writeText(document.URL);
+      await navigator.clipboard.writeText(document.URL);
       alert("URL berhasil disalin.");
     })
   );
@@ -210,9 +207,9 @@ document.querySelectorAll("button.share-button")
     })
   );
 
-document.querySelectorAll(".post video")
+document.querySelectorAll("video")
   .forEach((video) => {
-    (video as HTMLVideoElement).addEventListener("click", function (event) {
+    video.addEventListener("click", function (event) {
       event.preventDefault();
       if (this.paused) {
         this.play();
