@@ -190,3 +190,44 @@ html[data-theme="dark"] details.dropdown.theme-switcher {
     color: var(--pico-primary-inverse);
   }
 }
+
+@view-transition {
+  navigation: auto;
+}
+
+@keyframes grow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes shrink {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+  }
+}
+
+#main-content {
+  view-transition-name: main-content;
+}
+
+::view-transition-group(main-content) {
+  height: auto;
+  right: auto;
+  left: auto;
+  transform-origin: center;
+}
+
+::view-transition-old(main-content) {
+  animation: 0.25s ease-in both shrink;
+}
+
+::view-transition-new(main-content) {
+  animation: 0.25s 0.25s ease-out both grow;
+}

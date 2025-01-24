@@ -6,6 +6,7 @@
     <title>{{title}} | NexInox</title>
     <link rel="preload" as="style" href="/style.css" />
     <link rel="stylesheet" href="/style.css" />
+    <link rel="expect" href="#main-content" blocking="render" />
   </head>
   <body>
     <header>
@@ -80,7 +81,7 @@
       </div>
       <hr />
     </header>
-    <main class="container">
+    <main class="container" id="main-content">
       {{ content }}
     </main>
     <footer>
