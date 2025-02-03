@@ -195,21 +195,25 @@ html[data-theme="dark"] details.dropdown.theme-switcher {
   navigation: auto;
 }
 
-@keyframes grow {
+@keyframes in {
   from {
     transform: scaleX(0);
+    opacity: 0;
   }
   to {
     transform: scaleX(1);
+    opacity: 1;
   }
 }
 
-@keyframes shrink {
+@keyframes out {
   from {
     transform: scaleX(1);
+    opacity: 1;
   }
   to {
     transform: scaleX(0);
+    opacity: 0;
   }
 }
 
@@ -225,9 +229,13 @@ html[data-theme="dark"] details.dropdown.theme-switcher {
 }
 
 ::view-transition-old(main-content) {
-  animation: 0.25s ease-in both shrink;
+  animation: 0.1s 0.15s ease-in both out;
 }
 
 ::view-transition-new(main-content) {
-  animation: 0.25s 0.25s ease-out both grow;
+  animation: 0.25s 0.15s ease-out both in;
+}
+
+::view-transition-group(root) {
+  animation: 0.1s ease both;
 }

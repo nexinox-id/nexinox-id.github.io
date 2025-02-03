@@ -34,6 +34,7 @@
           width="{{ width }}"
           height="{{ height }}"
           preload="none"
+          style="view-transition-name: thumb-{{shortcode}};"
           loop
         >
           <source src="{{ video }}" type="video/mp4" />
@@ -47,7 +48,7 @@
         <small>
           Diunggah: 
           <time datetime="{{date |> date("ATOM")}}">
-            <em>{{ date |> date("PPPpp") }} WIB</em>
+            <em>{{ date |> date("PPP") }}</em>
           </time>
         </small>
         <hr />
