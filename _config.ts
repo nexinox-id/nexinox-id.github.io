@@ -1,10 +1,9 @@
 import { id } from "date-fns/locale/id";
-import type Site from "lume/core/site.ts";
-import { Page } from "lume/core/file.ts";
 import { basename } from "lume/deps/path.ts";
 import lume from "lume/mod.ts";
 /* Plugins */
 import checkUrls from "lume/plugins/check_urls.ts";
+import * as ci from "ci";
 import date from "lume/plugins/date.ts";
 import esbuild from "lume/plugins/esbuild.ts";
 import feed from "lume/plugins/feed.ts";
@@ -18,68 +17,27 @@ import minifyHTML from "lume/plugins/minify_html.ts";
 import pagefind from "lume/plugins/pagefind.ts";
 import picture from "lume/plugins/picture.ts";
 import purgecss from "lume/plugins/purgecss.ts";
-import redirects from "lume/plugins/redirects.ts";
 import robots from "lume/plugins/robots.ts";
+import redirects from "lume/plugins/redirects.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import slugifyUrls from "lume/plugins/slugify_urls.ts";
 import transformImages from "lume/plugins/transform_images.ts";
+
+import { paragraphFilterFn, redirectOutputFn } from "./_functions.ts";
 
 const profile = await Array.fromAsync(Deno.readDir("nex_inox"))
   .then((files) => files.find((f) => f.name.includes("profile_pic")))
   .then((file) => "nex_inox/" + file?.name);
 
-const paragraphFn = (value: string) =>
-  value
-    .trim()
-    .replaceAll("\n", "<br />")
-    .replaceAll(
-      /@([\w.]+)/g,
-      '<a href="https://instagram.com/$1" target="_blank" rel="noreferrer noopener">@$1</a>',
-    )
-    .replaceAll(
-      /#([\w-]+)/g,
-      (_, t) =>
-        `<a href="/t/${t.toLowerCase().replaceAll("_", "-")}/">#${t}</a>`,
-    );
-
-type Status = 301 | 302 | 307 | 308;
-type Redirect = [string, string, Status];
-
-const redirectOutputFn = (redirects: Redirect[], site: Site) => {
-  for (const [url, to, statusCode] of redirects) {
-    const timeout = (statusCode === 301 || statusCode === 308) ? 0 : 1;
-    const content = `<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="color-scheme" content="light dark" />
-  <title>Mengarahkan... | NexInox</title>
-  <meta http-equiv="refresh" content="${timeout}; url=${to}">
-  <link rel="canonical" href="${site.url(to, true)}">
-  <link rel="preload" as="style" href="/style.css" />
-  <link rel="stylesheet" href="/style.css" />
-</head>
-<body>
-  <main class="container">
-    <h1>Mengarahkan...</h1>
-    <a href="${to}">Klik di sini jika peramban tidak mengarahkan otomatis.</a>
-  </main>
-</body>
-</html>`;
-    const page = Page.create({ url, content });
-    site.pages.push(page);
-  }
-};
-
 export default lume()
+  .data("ci", ci)
   .use(date({ locales: { id } }))
   .use(esbuild({ options: { external: ["/pagefind/*"] } }))
   .use(favicon({ input: profile }))
   .use(feed({
     output: ["/posts.rss", "/posts.json"],
     query: "post",
-    info: { title: "NexInox Posts" },
+    info: { title: "NexInox Posts", description: "All NexInox posts feed." },
     items: {
       description: "=metas.description",
       image: "=metas.image",
@@ -100,5 +58,5 @@ export default lume()
   .use(slugifyUrls())
   .use(transformImages())
   .copy([".mp4"], (f) => "videos/" + basename(f))
-  .filter("paragraph", paragraphFn)
+  .filter("paragraph", paragraphFilterFn)
   .use(checkUrls({ strict: true }));

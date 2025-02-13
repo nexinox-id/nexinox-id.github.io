@@ -93,6 +93,13 @@
               <small>Hak cipta NexInox &copy; {{ year }}</small>
             </li>
           </ul>
+          <ul>
+            <li>
+              <a href="https://github.com/nexinox-id/nexinox-id.github.io/commit/{{ci.commit}}" role="button" class="secondary outline" data-tooltip="Commit ID">
+                <img src="{{ "github" |> icon("bootstrap") }}" alt="Github" inline /> {{ci.commit |> substring(0, 7)}}
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
     </footer>

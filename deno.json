@@ -1,8 +1,9 @@
 {
   "lock": false,
   "imports": {
+    "ci": "https://deno.land/x/ci@1.3.0/mod.ts",
     "date-fns": "npm:date-fns@^4.1.0",
-    "lume/": "https://deno.land/x/lume@v2.5.0/"
+    "lume/": "https://deno.land/x/lume@v2.5.1/"
   },
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",

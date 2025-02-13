@@ -13,9 +13,13 @@ export const url = ({ sourcePath, outputPath }: Lume.Page) => {
 export const year = new Date().getFullYear();
 
 export const profileJson = await Array.fromAsync(Deno.readDir("nex_inox"))
-  .then((files) => files.find((f) => f.isFile && f.name.startsWith("nex_inox") && f.name.endsWith(".json")))
+  .then((files) =>
+    files.find((f) =>
+      f.isFile && f.name.startsWith("nex_inox") && f.name.endsWith(".json")
+    )
+  )
   .then((file) => Deno.readTextFile("nex_inox/" + file?.name))
-  .then(text => JSON.parse(text)["node"]);
+  .then((text) => JSON.parse(text)["node"]);
 
 export const description = profileJson.biography;
 
