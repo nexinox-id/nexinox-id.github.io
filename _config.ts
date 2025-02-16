@@ -33,7 +33,30 @@ export default lume()
   .data("ci", ci)
   .use(date({ locales: { id } }))
   .use(esbuild({ options: { external: ["/pagefind/*"] } }))
-  .use(favicon({ input: profile }))
+  .use(favicon({
+    input: profile,
+    favicons: [
+      { url: "/favicon.ico", size: [48], rel: "icon", format: "ico" },
+      {
+        url: "/apple-touch-icon.png",
+        size: [180],
+        rel: "apple-touch-icon",
+        format: "png",
+      },
+      {
+        url: "/android-chrome-192x192.png",
+        size: [192],
+        format: "png",
+        rel: "icon",
+      },
+      {
+        url: "/android-chrome-512x512.png",
+        size: [512],
+        format: "png",
+        rel: "icon",
+      },
+    ],
+  }))
   .use(feed({
     output: ["/posts.rss", "/posts.json"],
     query: "post",
@@ -58,5 +81,6 @@ export default lume()
   .use(slugifyUrls())
   .use(transformImages())
   .copy([".mp4"], (f) => "videos/" + basename(f))
+  .copy("manifest.json")
   .filter("paragraph", paragraphFilterFn)
   .use(checkUrls({ strict: true }));
