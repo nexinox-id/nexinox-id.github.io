@@ -24,6 +24,7 @@ import slugifyUrls from "lume/plugins/slugify_urls.ts";
 import transformImages from "lume/plugins/transform_images.ts";
 
 import { paragraphFilterFn, redirectOutputFn } from "./_functions.ts";
+import serwist from "./_serwist.ts";
 
 const profile = await Array.fromAsync(Deno.readDir("nex_inox"))
   .then((files) => files.find((f) => f.name.includes("profile_pic")))
@@ -77,6 +78,7 @@ export default lume()
   .use(purgecss())
   .use(redirects({ output: redirectOutputFn }))
   .use(robots())
+  .use(serwist())
   .use(sitemap({ query: "date!=undefined" }))
   .use(slugifyUrls())
   .use(transformImages())

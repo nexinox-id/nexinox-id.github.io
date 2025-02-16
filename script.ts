@@ -220,3 +220,11 @@ document.querySelectorAll("video")
       }
     });
   });
+
+import { Serwist } from "@serwist/window";
+
+if ("serviceWorker" in navigator) {
+  const serwist = new Serwist("/sw.js", { scope: "/", type: "classic" });
+
+  void serwist.register();
+}
