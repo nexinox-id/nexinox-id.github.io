@@ -226,5 +226,6 @@ import { Serwist } from "@serwist/window";
 if ("serviceWorker" in navigator) {
   const serwist = new Serwist("/sw.js", { scope: "/", type: "classic" });
 
-  serwist.register();
+  await serwist.register();
+  serwist.messageSkipWaiting();
 }

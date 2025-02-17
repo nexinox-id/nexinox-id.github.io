@@ -17,7 +17,6 @@ declare const self: WorkerGlobalScope;
 
 const serwist = new Serwist({
   precacheEntries: self.__SW_MANIFEST,
-  skipWaiting: true,
   runtimeCaching: [
     {
       matcher: ({ request }) => request.destination === "document",
