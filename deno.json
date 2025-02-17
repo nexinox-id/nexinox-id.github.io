@@ -17,5 +17,6 @@
     "types": [
       "lume/types.ts"
     ]
-  }
+  },
+  "exclude": ["_site"]
 }

@@ -7,17 +7,19 @@ export interface Options extends Omit<GetManifestOptions, "globDirectory"> {
 }
 
 export const defaultOptions: Options = {
-  globPatterns: ["**/*.{js,css,html,png,jpg,avif,webp}"],
   swDest: "sw.js",
 };
 
 export default function serwist(userOptions?: Options) {
-  const options = merge(defaultOptions, userOptions);
+  const { swDest, ...gmOptions } = merge(defaultOptions, userOptions);
 
   return (site: Site) => {
     async function buildSw() {
-      const manifest = await getManifest({ globDirectory: site.dest() });
-      const sw = await site.getOrCreatePage(options.swDest);
+      const manifest = await getManifest({
+        globDirectory: site.dest(),
+        ...gmOptions,
+      });
+      const sw = await site.getOrCreatePage(swDest);
       sw.content = (sw.content as string).replace(
         "self.__SW_MANIFEST",
         JSON.stringify(manifest.manifestEntries),

@@ -1,5 +1,6 @@
 import { Page } from "lume/core/file.ts";
 import type Site from "lume/core/site.ts";
+import type { ManifestEntry } from "@serwist/build";
 
 type Status = 301 | 302 | 307 | 308;
 type Redirect = [string, string, Status];
@@ -44,3 +45,11 @@ export const paragraphFilterFn = (value: string) =>
       (_, t) =>
         `<a href="/t/${t.toLowerCase().replaceAll("_", "-")}/">#${t}</a>`,
     );
+
+export const prettyUrlManifestTransformFn = (manifest: ManifestEntry[]) => ({
+  manifest: manifest.map((entry) => ({
+    ...entry,
+    url: (entry.url.startsWith("/") ? "" : "/") +
+      entry.url.replace("index.html", ""),
+  })),
+});

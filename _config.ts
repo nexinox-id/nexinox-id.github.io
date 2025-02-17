@@ -23,7 +23,11 @@ import sitemap from "lume/plugins/sitemap.ts";
 import slugifyUrls from "lume/plugins/slugify_urls.ts";
 import transformImages from "lume/plugins/transform_images.ts";
 
-import { paragraphFilterFn, redirectOutputFn } from "./_functions.ts";
+import {
+  paragraphFilterFn,
+  prettyUrlManifestTransformFn,
+  redirectOutputFn,
+} from "./_functions.ts";
 import serwist from "./_serwist.ts";
 
 const profile = await Array.fromAsync(Deno.readDir("nex_inox"))
@@ -78,7 +82,12 @@ export default lume()
   .use(purgecss())
   .use(redirects({ output: redirectOutputFn }))
   .use(robots())
-  .use(serwist())
+  .use(
+    serwist({
+      globIgnores: ["t\/**\/*", "pagefind\/**\/*"],
+      manifestTransforms: [prettyUrlManifestTransformFn],
+    }),
+  )
   .use(sitemap({ query: "date!=undefined" }))
   .use(slugifyUrls())
   .use(transformImages())
