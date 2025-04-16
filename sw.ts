@@ -1,8 +1,10 @@
 // Where you import this depends on your stack.
 import {
+  CacheableResponsePlugin,
   CacheFirst,
   ExpirationPlugin,
   type PrecacheEntry,
+  RangeRequestsPlugin,
   Serwist,
   StaleWhileRevalidate,
 } from "serwist";
@@ -20,7 +22,7 @@ const serwist = new Serwist({
   runtimeCaching: [
     {
       matcher: ({ request }) => request.destination === "document",
-      handler: new StaleWhileRevalidate(),
+      handler: new StaleWhileRevalidate({ cacheName: "page" }),
     },
     {
       matcher: ({ request }) =>
@@ -33,7 +35,14 @@ const serwist = new Serwist({
       matcher: ({ request }) => request.destination === "video",
       handler: new CacheFirst({
         cacheName: "video",
-        plugins: [new ExpirationPlugin({ purgeOnQuotaError: true })],
+        plugins: [
+          new CacheableResponsePlugin({ statuses: [200] }),
+          new RangeRequestsPlugin(),
+          new ExpirationPlugin({
+            maxAgeSeconds: 31536000,
+            purgeOnQuotaError: true,
+          }),
+        ],
       }),
     },
   ],

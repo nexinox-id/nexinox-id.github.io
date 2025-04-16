@@ -84,6 +84,7 @@ export default lume()
   .use(robots())
   .use(
     serwist({
+      additionalPrecacheEntries: ["/manifest.json"],
       globIgnores: ["t\/**\/*", "pagefind\/**\/*"],
       manifestTransforms: [prettyUrlManifestTransformFn],
     }),
