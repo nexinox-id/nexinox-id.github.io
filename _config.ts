@@ -1,9 +1,9 @@
+import * as ci from "ci";
 import { id } from "date-fns/locale/id";
 import { basename } from "lume/deps/path.ts";
 import lume from "lume/mod.ts";
 /* Plugins */
 import checkUrls from "lume/plugins/check_urls.ts";
-import * as ci from "ci";
 import date from "lume/plugins/date.ts";
 import esbuild from "lume/plugins/esbuild.ts";
 import feed from "lume/plugins/feed.ts";
@@ -30,16 +30,14 @@ import {
 } from "./_functions.ts";
 import serwist from "./_serwist.ts";
 
-const profile = await Array.fromAsync(Deno.readDir("nex_inox"))
-  .then((files) => files.find((f) => f.name.includes("profile_pic")))
-  .then((file) => "nex_inox/" + file?.name);
-
 export default lume()
   .data("ci", ci)
   .use(date({ locales: { id } }))
   .use(esbuild({ options: { external: ["/pagefind/*"] } }))
   .use(favicon({
-    input: profile,
+    input: await Array.fromAsync(Deno.readDir("nex_inox"))
+      .then((files) => files.find((f) => f.name.includes("profile_pic")))
+      .then((file) => "nex_inox/" + file?.name),
     favicons: [
       { url: "/favicon.ico", size: [48], rel: "icon", format: "ico" },
       {
@@ -89,7 +87,7 @@ export default lume()
       manifestTransforms: [prettyUrlManifestTransformFn],
     }),
   )
-  .use(sitemap({ query: "date!=undefined" }))
+  .use(sitemap())
   .use(slugifyUrls())
   .use(transformImages())
   .copy([".mp4"], (f) => "videos/" + basename(f))

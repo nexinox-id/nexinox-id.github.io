@@ -1,12 +1,12 @@
 {
   "lock": false,
   "imports": {
-    "@serwist/build": "npm:@serwist/build@^9.0.11",
-    "@serwist/window": "npm:@serwist/window@^9.0.11",
+    "@serwist/build": "npm:@serwist/build@^9.0.13",
+    "@serwist/window": "npm:@serwist/window@^9.0.13",
     "ci": "https://deno.land/x/ci@1.3.0/mod.ts",
     "date-fns": "npm:date-fns@^4.1.0",
-    "lume/": "https://deno.land/x/lume@v2.5.1/",
-    "serwist": "npm:serwist@^9.0.11"
+    "lume/": "https://deno.land/x/lume@v2.5.3/",
+    "serwist": "npm:serwist@^9.0.13"
   },
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",

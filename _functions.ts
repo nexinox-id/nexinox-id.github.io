@@ -27,7 +27,7 @@ export const redirectOutputFn = (redirects: Redirect[], site: Site) => {
   </main>
 </body>
 </html>`;
-    const page = Page.create({ url, content });
+    const page = Page.create({ url, content, isRedirect: true });
     site.pages.push(page);
   }
 };
