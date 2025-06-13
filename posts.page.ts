@@ -70,7 +70,7 @@ export default function* (
         width,
         height,
       } = data;
-      const tags = keywords.map((s) => s.toLowerCase());
+      const tags = keywords.map((s) => slugify(s));
       /* Generate JSON-LD */
       const jsonLd: WithContext<VideoObject> = {
         "@context": "https://schema.org",
